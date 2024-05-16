@@ -5,8 +5,14 @@ module.exports = {
     './src/*.{ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkblue: '#002839',
+        darkorange: '#FF8400',
+        lightblue: '#8DD2F3',
+        lightgray: '#97A7B4',
+      },
+    },
   },
   plugins: [],
 }
-

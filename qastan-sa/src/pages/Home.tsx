@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import Hero from "../components/Hero";
 
 const Home: React.FC = () => {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold">Home Page</h1>
-      <p>home</p>
-    </div>
+    <>
+      <Hero />
+    </>
   );
-}
+};
 
 export default Home;
