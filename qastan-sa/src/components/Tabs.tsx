@@ -10,7 +10,7 @@ const Tabs: React.FC = () => {
   return (
     <>
       <div className="container mx-auto pt-56 sm:pt-5">
-        <h1 className="pl-5 text-4xl">Onze toepassingen</h1>
+        <h1 className="pl-5 text-4xl">Onze oplossingen</h1>
         <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
       </div>
       <div className="flex flex-col justify-center items-center px-4 py-10">
