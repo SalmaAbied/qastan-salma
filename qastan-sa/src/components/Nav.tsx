@@ -16,13 +16,13 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="absolute top-0 right-10 z-10 pr-10">
+    <div className="relative sticky top-0 z-40">
+      <div className="absolute top-0 right-10 z-40 pr-10">
         <Link to="/Support" className="bg-darkorange font-semibold text-white px-4 py-2 rounded-b-lg text-sm hover:bg-lightblue transition duration-300">
           Support
         </Link>
       </div>
-      <nav className="bg-darkblue text-white px-4 pt-4 pb-5 flex justify-between items-center md:px-20 md:pt-10">
+      <nav className="bg-darkblue text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20">
         <div className="space-x-4">
           <Link to="/">
             <img src={logo} alt="Logo" className="h-12 w-auto" />
