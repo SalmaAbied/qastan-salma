@@ -46,6 +46,7 @@ const partners = [
     logoUrl: "https://www.qastan.be/swfiles/files/Televic_logo_new_600-1.svg?nc=1709650208",
   },
 ];
+
 function LogoSlider() {
   const sliderRef = useRef<Slider>(null);
 
@@ -56,7 +57,7 @@ function LogoSlider() {
     autoplaySpeed: 3500,
     arrows: false,
     dots: false,
-    pauseOnHover: false,
+    pauseOnHover: true,
     draggable: true,
     responsive: [
       {
@@ -85,24 +86,35 @@ function LogoSlider() {
       sliderRef.current.slickNext();
     }
   };
+
   return (
     <>
       <div className="pt-44 container mx-auto">
-        <h1 className="text-4xl">Onze partners</h1>
-        <hr className="w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
+        <h1 className="pl-5 text-4xl">Onze partners</h1>
+        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
         <Slider ref={sliderRef} {...settings} className="py-10 flex justify-center">
           {partners.map((partner) => (
-            <div key={partner.id} className="px-4 flex justify-center border-2 border-darkblue rounded-lg">
-                <img src={partner.logoUrl} alt={partner.name} className="mx-auto w-36 h-36 object-contain" />
+            <div key={partner.id} className="px-2">
+              <div className="border-2 border-darkblue rounded-lg">
+                <div className="p-4 flex justify-center">
+                  <img
+                    src={partner.logoUrl}
+                    alt={partner.name}
+                    className="w-36 h-36 object-contain"
+                  />
+                </div>
+              </div>
             </div>
           ))}
         </Slider>
-        <button onClick={goToPrevSlide}>
-          <ArrowLeftIcon size={24} />
-        </button>
-        <button onClick={goToNextSlide}>
-          <ArrowRightIcon size={24} />
-        </button>
+        <div className="flex justify-center mt-4">
+          <button onClick={goToPrevSlide} className="mx-2">
+            <ArrowLeftIcon size={24} />
+          </button>
+          <button onClick={goToNextSlide} className="mx-2">
+            <ArrowRightIcon size={24} />
+          </button>
+        </div>
       </div>
     </>
   );

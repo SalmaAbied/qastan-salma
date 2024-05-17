@@ -11,6 +11,7 @@ module.exports = {
         darkorange: '#FF8400',
         lightblue: '#8DD2F3',
         lightgray: '#97A7B4',
+        bggray: '#EAEDF0',
       },
     },
   },
