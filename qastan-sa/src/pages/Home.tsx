@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import LogoSlider from "../components/Slider";
+import LogoSlider from "../components/SliderHome";
 import CardFullW from "../components/CardFullW";
 import Tabs from "../components/Tabs";
 import Banner from "../components/Banner";
