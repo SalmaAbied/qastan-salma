@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
   }, []);
   return (
     <div className="relative">
-      <div className="h-[calc(100vh-90px)] relative bg-darkblue text-white rounded-b-3xl 2xl:h-[calc(100vh-600px)]">
+      <div className="h-[calc(100vh-90px)] relative bg-darkblue text-white rounded-b-3xl 2xl:h-[calc(100vh-300px)]">
         <div
           className="flex flex-col justify-end 2xl:justify-center"
           style={{
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             <h1 className="h-40 md:text-8xl font-bold text-6xl pb-5 h-30">
               Helemaal <span className="p2 text-darkorange">digitaal</span>
             </h1>
-            <p className="text-base px-5 md:text-xl mx-auto md:w-1/2 pb-5">
+            <p className="text-base px-5 md:text-xl mx-auto md:w-1/2 pb-5 md:mt-10 lg:mt-2">
               Op zoek naar een <span className="font-bold">IT-partner</span> om de <span className="font-bold">digitalisering</span> van je <span className="font-bold">organisatie</span> in goede banen te leiden? Ontdek onze oplossingen
             </p>
             <a href="/Contact" className="bg-darkorange font-medium py-2 px-4 rounded-full hover:bg-lightblue transition duration-300">

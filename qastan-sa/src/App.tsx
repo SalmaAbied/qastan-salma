@@ -15,6 +15,7 @@ import Digitalisering from "./pages/Digitalisering";
 import Automatisering from "./pages/Automatisering";
 import Plannen from "./pages/Plannen";
 import IT from "./pages/IT";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -36,6 +37,7 @@ const App: React.FC = () => {
         <Route path="/Plannen" element={<Plannen />} />
         <Route path="/IT" element={<IT />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

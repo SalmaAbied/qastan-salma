@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
           Support
         </Link>
       </div>
-      <nav className="bg-darkblue text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20">
+      <nav className="bg-darkblue rounded-b-3xl text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20">
         <div className="space-x-4">
           <Link to="/">
             <img src={logo} alt="Logo" className="h-12 w-auto" />
@@ -43,32 +43,32 @@ const Nav: React.FC = () => {
 
           <ul className="flex flex-col space-y-6 mt-20 items-center px-4 md:flex-row md:space-y-0 z-10 md:space-x-4 md:mt-0 md:px-0">
             <li>
-              <Link to="/" className={`md:hidden font-medium text-lg ${location.pathname === "/" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/" className={`md:hidden lg:ml-6 font-medium text-lg ${location.pathname === "/" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
                 Home
               </Link>
             </li>{" "}
             <li>
-              <Link to="/Oplossingen" className={`font-medium text-lg ${location.pathname === "/Oplossingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Oplossingen" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Oplossingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
                 Oplossingen
               </Link>
             </li>
             <li>
-              <Link to="/Toepassingen" className={`font-medium text-lg ${location.pathname === "/Toepassingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Toepassingen" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Toepassingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
                 Toepassingen
               </Link>
             </li>
             <li>
-              <Link to="/Over" className={`font-medium text-lg ${location.pathname === "/Over" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Over" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Over" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
                 Over ons
               </Link>
             </li>
             <li>
-              <Link to="/Contact" className={`font-medium text-lg ${location.pathname === "/Contact" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Contact" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Contact" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
                 Contact
               </Link>
             </li>
             <li>
-              <Link to="/Blog" className={`font-medium text-lg ${location.pathname === "/Blog" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Blog" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Blog" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
                 Blog
               </Link>
             </li>

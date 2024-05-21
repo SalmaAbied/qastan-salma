@@ -5,6 +5,7 @@ import CardFullW from "../components/CardFullW";
 import Tabs from "../components/Tabs";
 import Banner from "../components/Banner";
 import CardFullWTwo from "../components/CardFullWTwo";
+import CardWImage from "../components/CardWImage";
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <Tabs />
       <Banner />
       <CardFullWTwo />
+      <CardWImage />
     </>
   );
 };

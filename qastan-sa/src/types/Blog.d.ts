@@ -5,3 +5,10 @@ interface TabProps {
     children: React.ReactNode;
   }
   
+  // cards with image (toepassingen)
+interface CardProps {
+  imageUrl: string;
+  tags: string[];
+  title: string;
+  description: string;
+}

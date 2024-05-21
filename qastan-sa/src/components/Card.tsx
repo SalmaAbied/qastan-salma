@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from "swiper/modules";
 
 const oplossingenData = [
   {
@@ -39,7 +39,7 @@ function Card() {
         {oplossingenData.map((oplossing) => (
           <div key={oplossing.id} className="relative rounded-xl bg-darkblue overflow-hidden w-72 h-72 group bg-darkblue shadow-lg shadow-darkblue/50 text-gray-700">
             <div className="relative w-full h-96">
-              <img src={oplossing.imageSrc} alt={oplossing.altText} className="opacity-30 lg:opacity-65" />
+              <img src={oplossing.imageSrc} alt={oplossing.altText} className="opacity-85" />
             </div>
             <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center p-6 bg-darkblue w-48 mx-auto rounded-t-lg h-12">
               <h3 className="text-white text-xl font-regular">{oplossing.title}</h3>
@@ -47,11 +47,20 @@ function Card() {
           </div>
         ))}
       </div>
-
       <div className="block xl:hidden">
         <Swiper
           spaceBetween={20}
-          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            840: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           navigation
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
@@ -60,7 +69,7 @@ function Card() {
             <SwiperSlide key={oplossing.id}>
               <div className="relative rounded-xl bg-darkblue overflow-hidden w-72 h-72 group bg-darkblue shadow-lg shadow-darkblue/50 text-gray-700 mx-auto">
                 <div className="relative w-full h-96">
-                  <img src={oplossing.imageSrc} alt={oplossing.altText} className="opacity-30 lg:opacity-65" />
+                  <img src={oplossing.imageSrc} alt={oplossing.altText} className="opacity-85" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center p-6 bg-darkblue w-48 mx-auto rounded-t-lg h-12">
                   <h3 className="text-white text-xl font-regular">{oplossing.title}</h3>
