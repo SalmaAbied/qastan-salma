@@ -95,7 +95,7 @@ function LogoSlider() {
         <Slider ref={sliderRef} {...settings} className="py-10 flex justify-center">
           {partners.map((partner) => (
             <div key={partner.id} className="px-2">
-              <div className="border-2 border-darkblue rounded-lg">
+              <div className="border-2 border-darkblue rounded-3xl">
                 <div className="p-4 flex justify-center">
                   <img
                     src={partner.logoUrl}

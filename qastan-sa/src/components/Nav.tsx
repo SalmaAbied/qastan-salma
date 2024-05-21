@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../img/puffinWhiteLarge.png";
 import patroon from "../img/patroon.png";
@@ -6,6 +6,7 @@ import patroon from "../img/patroon.png";
 const Nav: React.FC = () => {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,6 +16,26 @@ const Nav: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    if (location.pathname === "/") {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [location.pathname]);
+
+  const shouldApplyRoundedClass = isScrolled || location.pathname !== "/";
+
   return (
     <div className="relative sticky top-0 z-40">
       <div className="absolute top-0 right-10 z-40 pr-10">
@@ -22,7 +43,7 @@ const Nav: React.FC = () => {
           Support
         </Link>
       </div>
-      <nav className="bg-darkblue rounded-b-3xl text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20">
+      <nav className={`bg-darkblue ${shouldApplyRoundedClass ? "rounded-b-3xl" : ""} text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20`}>
         <div className="space-x-4">
           <Link to="/">
             <img src={logo} alt="Logo" className="h-12 w-auto" />

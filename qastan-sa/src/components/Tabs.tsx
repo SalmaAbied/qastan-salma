@@ -9,7 +9,7 @@ const Tabs: React.FC = () => {
 
   return (
     <>
-      <div className="container mx-auto pt-56 sm:pt-5">
+      <div className="container mx-auto pt-56 md:pt-24 lg:pt-56 xl:pt-2 sm:pt-5">
         <h1 className="pl-5 text-4xl">Onze oplossingen</h1>
         <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
       </div>
@@ -43,7 +43,7 @@ const Tabs: React.FC = () => {
 const Tab: React.FC<TabProps> = ({ tabId, activeTab, onClick, children }) => {
   const isActive = tabId === activeTab;
   return (
-    <div id={`${tabId}-nav`} className={`px-3 pt-1 rounded-t-lg text-center cursor-pointer transition duration-300 hover:text-darkorange ${isActive ? "bg-bggray text-black" : ""}`} onClick={() => onClick(tabId)}>
+    <div id={`${tabId}-nav`} className={`px-3 pt-1 rounded-t-lg text-center cursor-pointer transition duration-300 hover:bg-bggray ${isActive ? "bg-bggray text-black" : ""}`} onClick={() => onClick(tabId)}>
       {children}
     </div>
   );
