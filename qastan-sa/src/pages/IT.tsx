@@ -84,7 +84,7 @@ function IT() {
           ))}
         </div>
       </div>
-      <Banner title="Samen duiken in de hardware en infrastructuur van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop hieronder voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een gesprek aan" />
+      <Banner title="Samen duiken in de hardware en infrastructuur van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop hieronder voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een gesprek aan" bgcolor="darkblue" />
       <Title title="Wij zijn de oplossing voor al uw IT problemen" description="" />
       <CardDetail cardData={cardData} />
       <LogoSlider />

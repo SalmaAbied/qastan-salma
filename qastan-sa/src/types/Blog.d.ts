@@ -41,4 +41,5 @@ interface Banner {
   title: string;
   description: string;
   buttonText: string;
+  bgcolor: string;
 }

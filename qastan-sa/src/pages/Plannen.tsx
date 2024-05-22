@@ -64,7 +64,7 @@ function Plannen() {
           ))}
         </div>
       </div>
-      <Banner title="Samen duiken in de planning van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen!" buttonText="Vraag een gesprek aan" />
+      <Banner title="Samen duiken in de planning van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen!" buttonText="Vraag een gesprek aan" bgcolor="darkblue" />
       <Title title="Voordelen van MountQ als planner?" description="" />
       <CardDetail cardData={cardData} />
       <LogoSlider />

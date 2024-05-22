@@ -49,7 +49,7 @@ export function NavigationMenuDemo() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <a href="/Oplossingen" className={`lg:ml-6 font-medium text-lg ${isSolutionsActive ? "text-darkorange" : "text-black"} hover:text-darkorange transition duration-300`} onClick={handleMenuToggle}>
+            <a href="/Oplossingen" className={`lg:ml-6 font-medium text-lg ${isSolutionsActive ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleMenuToggle}>
               Oplossingen
             </a>
           </NavigationMenuTrigger>

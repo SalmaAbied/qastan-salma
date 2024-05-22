@@ -79,7 +79,7 @@ function Digitaliseren() {
           ))}
         </div>
       </div>
-      <Banner title="Samen duiken in de automatisatie van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een demo aan" />
+      <Banner title="Samen duiken in de automatisatie van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een demo aan" bgcolor="darkblue" />
       <Title title="Mee(r) digitaliseren" description='"Niet alleen gaat digitalisering over technologie. het gaat ook over het transformeren van hoe we zaken doen en interageren met de wereld."' />
       <CardDetail cardData={cardData} />
       <LogoSlider />

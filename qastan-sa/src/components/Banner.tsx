@@ -13,7 +13,7 @@ function Banner() {
           </a>
         </div>
         <div className="mt-8 lg:mt-0 lg:absolute lg:right-12 lg:top-1/2 lg:transform lg:-translate-y-1/2">
-          <img src={cirkel} alt="Cirkel" className="h-24 w-auto md:h-32 lg:h-36" />
+          <img src={cirkel} alt="Cirkel" className="h-24 w-auto md:h-32 lg:h-72" />
         </div>
       </div>
     </div>
