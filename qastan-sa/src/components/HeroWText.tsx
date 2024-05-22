@@ -27,7 +27,7 @@ const HeroWText: React.FC<HeroWTextProps> = ({ badgeText, heading, paragraph, bu
           <img
             src={imageUrl}
             alt="Hero"
-            className="rounded-3xl w-full h-auto max-w-md md:max-w-none object-cover"
+            className="rounded-3xl w-full h-auto max-w-md md:max-w-none object-cover shadow-lg shadow-darkblue/50"
           />
         </div>
       </div>

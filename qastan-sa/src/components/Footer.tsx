@@ -1,5 +1,5 @@
 import React from "react";
-import { Facebook, Instagram, Linkedin, Send } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Send, SendHorizontal } from "lucide-react";
 import logo from "../img/puffinWhiteLarge.png";
 
 function Footer() {
@@ -96,9 +96,9 @@ function Footer() {
                 <p className="mb-3">Niet vergeten om je te abonneren op onze nieuwsbrief</p>
                 <form className="relative">
                   <div className="relative">
-                    <input type="text" placeholder="E-mailadres" className="w-full py-2 px-3 rounded-full bg-gray-800 border border-gray-600 text-gray-300 pr-12" />
-                    <button type="submit" className="absolute rounded-tr-full rounded-br-full top-0 right-0 bg-darkorange text-gray-900 py-2 px-4 border border-darkorange">
-                      <Send color="white" />
+                    <input id="email" name="email" type="text" placeholder="E-mailadres" className="w-full py-2 px-3 rounded-full bg-gray-800 border border-gray-600 text-gray-300 pr-12" />
+                    <button type="submit" className="absolute rounded-tr-full rounded-br-full top-0 right-0 bg-darkorange text-gray-900 py-2 px-4 border border-darkorange hover:bg-lightblue transition duration-300 hover:border-lightblue">
+                      <SendHorizontal color="white" />
                     </button>
                   </div>
                 </form>
