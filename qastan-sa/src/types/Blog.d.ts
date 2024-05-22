@@ -12,3 +12,12 @@ interface CardProps {
   title: string;
   description: string;
 }
+// Hero op detail page
+interface HeroWTextProps {
+  badgeText: string;
+  heading: string;
+  paragraph: string;
+  buttonText: string;
+  buttonLink: string;
+  imageUrl: string;
+}
