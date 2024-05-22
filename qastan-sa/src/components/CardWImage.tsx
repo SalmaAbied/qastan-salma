@@ -25,7 +25,7 @@ const CardWImage: React.FC = () => {
   return (
     <>
       <div className="pb-20">
-        <div className="container mx-auto pt-56 sm:pt-5 pb-10">
+        <div className="container mx-auto pt-56 md:pt-5 pb-10">
           <h1 className="pl-5 text-4xl">Ontdek onze toepassingen</h1>
           <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
         </div>

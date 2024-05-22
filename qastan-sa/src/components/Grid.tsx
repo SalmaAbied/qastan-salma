@@ -9,7 +9,7 @@ const solutions = [
     points: ["Zorgt voor eenvoudig document management", "Garandeert een efficiëntere werking", "Creëert orde en netheid in je documenten", "Minimaliseert repetitief en manueel werk"],
     links: [
       { href: "/Toepassingen", text: "Praktische voorbeelden", bg: "bg-darkorange", textColor: "text-white" },
-      { href: "/Digitalisering", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
+      { href: "/Digitaliseren", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
     ],
     shadow: "shadow-darkblue/50",
   },
@@ -20,7 +20,7 @@ const solutions = [
     points: ["Verhoogt de productiviteit", "Zorgt voor een vlottere samenwerking", "Bespaart kostbare tijd binnen je onderneming", "Creëert meer inzicht"],
     links: [
       { href: "/Toepassingen", text: "Praktische voorbeelden", bg: "bg-darkorange", textColor: "text-white" },
-      { href: "/Automatisering", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
+      { href: "/Automatiseren", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
     ],
     shadow: "shadow-blue-300/50",
   },
@@ -50,7 +50,7 @@ const solutions = [
 
 function Grid() {
   return (
-    <div className="container mx-auto pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto pt-20 px-2 sm:px-6 lg:px-8">
       <div>
         <h1 className="text-4xl font-bold text-gray-800 pl-5">Ontdek onze oplossingen</h1>
         <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />

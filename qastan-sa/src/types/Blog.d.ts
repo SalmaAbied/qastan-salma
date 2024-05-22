@@ -24,8 +24,8 @@ interface HeroWTextProps {
 
 // title detail page
 interface TitleProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 // card with symbol

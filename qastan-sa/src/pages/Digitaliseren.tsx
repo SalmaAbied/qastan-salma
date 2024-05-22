@@ -4,6 +4,8 @@ import CardWSymbol from "../components/CardWSymbol";
 import Title from "../components/Title";
 import Banner from "../components/BannerDetail";
 import CardDetail from "../components/CardDetail";
+import LogoSlider from "../components/Slider";
+import CardWImage from "../components/CardWImage";
 
 const cardInfo = [
   {
@@ -28,19 +30,43 @@ const cardInfo = [
   },
 ];
 
-function Digitalisering() {
+function Digitaliseren() {
   const cardData = [
     {
-      imageUrl: "https://www.qastan.be/swfiles/files/productief-werken-met-qastan-it.jpeg?nc=1715332943",
-      title: "IT-Management & MSP",
-      description: "Geen eigen IT-dienst? Tijdelijk tekort aan mensen op jouw IT-afdeling of gewoon een lange termijnpartner nodig die met je kan meedenken?",
+      imageUrl: "https://www.qastan.be/swfiles/files/artificiele-intelligentie-ai-voor-documenten.jpeg?nc=1715336211",
+      title: "Data-extractie en documentherkenning (IDP)",
+      description: "Sneller documenten verwerken (facturen, bonnen, contracten,...) met onze AI-herkenning. Overtypen wordt verleden tijd, sneller werken de toekomst!",
     },
     {
-      imageUrl: "https://www.qastan.be/swfiles/files/Powerapps_bouwen.jpeg?nc=1715333039",
-      title: "Meertalige helpdesk",
-      description: "Nood aan directe IT-hulp op afstand? Dringende IT-problemen waarvoor snelle interventies noodzakelijk zijn?",
+      imageUrl: "https://www.qastan.be/swfiles/files/ocr-herkenning-facturen.jpeg?nc=1715336601",
+      title: "Digitale dossiers",
+      description: "Documenten automatisch toevoegen aan een dossier (Werfdossiers, HR, projecten,...) zonder manuele tussenkomst? Overal beschikbaar voor jouw team en eventuele externen.",
     },
-    // Voeg hier meer kaartgegevens toe indien nodig
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/Logo_FITDOC_Small_RGB-1-1.svg?nc=1715336897",
+      title: "Documentbeheer (FITdoc DMS)",
+      description: "Een complete oplossing voor alle documentstromen. Automatisering en digitalisering van documenten start hier.",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/signature.png?nc=1715336964",
+      title: "Digitale ondertekening van documenten",
+      description: "Volg offertes en contracten efficiënt op zonder ze af te drukken. Bekijk de status op elk moment en verhoog jouw closing ratio’s.",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/alvaro-reyes-qWwpHwip31M-unsplash2-720x340-tab.jpg?nc=1715337029",
+      title: "Workflows en processen",
+      description: "Documenten en data bij de juiste persoon krijgen? Goedkeuring van documenten (facturen, offertes,...)",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/ocr-herkenning-factuurherkenning.jpeg?nc=1715337210",
+      title: "e-invoicing & Peppol",
+      description: "e-facutratie via Peppol wordt een verplichte standaard in België voor elke onderneming. Maak je klaar voor de facturatie van de toekomst.",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/uitlezen-van-documenten-en-bonnen-met-ai.jpeg?nc=1715337176",
+      title: "Mailbox automatisaties",
+      description: "Je mailbox zit overvol en is onoverzichtelijk? We organiseren en categoriseren mails, sturen ze automatisch door of laten we ze meteen verwerken door middel van AI!",
+    },
   ];
   return (
     <>
@@ -54,9 +80,12 @@ function Digitalisering() {
         </div>
       </div>
       <Banner title="Samen duiken in de automatisatie van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een demo aan" />
+      <Title title="Mee(r) digitaliseren" description='"Niet alleen gaat digitalisering over technologie. het gaat ook over het transformeren van hoe we zaken doen en interageren met de wereld."' />
       <CardDetail cardData={cardData} />
+      <LogoSlider />
+      <CardWImage />
     </>
   );
 }
 
-export default Digitalisering;
+export default Digitaliseren;

@@ -4,6 +4,8 @@ import CardWSymbol from "../components/CardWSymbol";
 import Title from "../components/Title";
 import Banner from "../components/BannerDetail";
 import CardDetail from "../components/CardDetail";
+import LogoSlider from "../components/Slider";
+import CardWImage from "../components/CardWImage";
 
 const cardInfo = [
   {
@@ -31,16 +33,25 @@ const cardInfo = [
 function Plannen() {
   const cardData = [
     {
-      imageUrl: "https://www.qastan.be/swfiles/files/productief-werken-met-qastan-it.jpeg?nc=1715332943",
-      title: "IT-Ma & MSP",
-      description: "Geen eigen IT-dienst? Tijdelijk tekort aan mensen op jouw IT-afdeling of gewoon een lange termijnpartner nodig die met je kan meedenken?",
+      imageUrl: "https://www.qastan.be/swfiles/files/artificiele-intelligentie-ai-voor-documenten.jpeg?nc=1715848906",
+      title: "Matching via algoritme",
+      description: "MountQ gaat opzoek naar de meest geschikte match tussen uitvoerder, taak, competenties of beschikbaarheden via een algoritme. Bij het algoritme houden we rekening me jouw bedrijfeigen wensen en noden (CAO-levels, voorraadlevels, route en afstand,...)",
     },
     {
-      imageUrl: "https://www.qastan.be/swfiles/files/Powerapps_bouwen.jpeg?nc=1715333039",
-      title: "Meertalige helpdesk",
-      description: "Nood aan directe IT-hulp op afstand? Dringende IT-problemen waarvoor snelle interventies noodzakelijk zijn?",
+      imageUrl: "https://www.qastan.be/swfiles/files/Audit.jpg?nc=1715848906",
+      title: "Standaard of toch liever op maat?",
+      description: "Maak gebruik van onze standaardcomponenten of kies voor een eigen op maat gemaakte planningsoftware. We houden rekening met jouw noden en wensen.",
     },
-   
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/productieplanning-en-scheduling.jpeg?nc=1715848906",
+      title: "Integraties in bestaande omgeving",
+      description: "MountQ biedt als planner zeer veel mogelijkheden naar integraties en koppelingen toe: MES, WMS, DMS, ERP, HR-tools, boekhouding, routeplanners,...",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/werkpostplanning-via-ai.png?nc=1715848906",
+      title: "Een oplossing vanuit de praktijk",
+      description: "MountQ werd als planningsoftware ontwikkeld en getest vanuit de praktijk samen met Van Marcke Group en Odisee Hogeschool. Theorie en praktijk komen zo samen in één enkele applicatie.",
+    },
   ];
   return (
     <>
@@ -54,7 +65,10 @@ function Plannen() {
         </div>
       </div>
       <Banner title="Samen duiken in de planning van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen!" buttonText="Vraag een gesprek aan" />
+      <Title title="Voordelen van MountQ als planner?" description="" />
       <CardDetail cardData={cardData} />
+      <LogoSlider />
+      <CardWImage />
     </>
   );
 }

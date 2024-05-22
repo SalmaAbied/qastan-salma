@@ -4,6 +4,8 @@ import CardWSymbol from "../components/CardWSymbol";
 import Title from "../components/Title";
 import Banner from "../components/BannerDetail";
 import CardDetail from "../components/CardDetail";
+import LogoSlider from "../components/Slider";
+import CardWImage from "../components/CardWImage";
 
 const cardInfo = [
   {
@@ -32,13 +34,43 @@ function IT() {
   const cardData = [
     {
       imageUrl: "https://www.qastan.be/swfiles/files/productief-werken-met-qastan-it.jpeg?nc=1715332943",
-      title: "IT-Ma & MSP",
+      title: "IT-Management & MSP",
       description: "Geen eigen IT-dienst? Tijdelijk tekort aan mensen op jouw IT-afdeling of gewoon een lange termijnpartner nodig die met je kan meedenken?",
     },
     {
       imageUrl: "https://www.qastan.be/swfiles/files/Powerapps_bouwen.jpeg?nc=1715333039",
       title: "Meertalige helpdesk",
       description: "Nood aan directe IT-hulp op afstand? Dringende IT-problemen waarvoor snelle interventies noodzakelijk zijn?",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/legoNetworkBuilders.png?nc=1715333089",
+      title: "Netwerk & Infrastructuur",
+      description: "Beheer, opzetten en ondersteuning van de IT-infrastructuur. Zowel kleine als grotere omgevingen.",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/hardware.jpg?nc=1715333361",
+      title: "Hardware",
+      description: "Hardware of andere apparatuur nodig? Reeds geïnstalleerde kant-en-klare systemen?",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/documenten-centraliseren.jpeg?nc=1715333166",
+      title: "Cloud & hosting",
+      description: "Periodieke back-ups, datamigraties of gewoon een beveiligde cloudruimte nodig?",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/Audit.jpg?nc=1715333204",
+      title: "IT-Audit",
+      description: "Evalueren van de huidige IT-infrastructuur? Kwetsbare punten in jouw beveiliging en bedrijfsprocessen in kaart brengen.",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/scanoplossingen-printoplossingen.jpeg?nc=1715333243",
+      title: "Scan en printoplossingen",
+      description: "Overvloed aan papieren documenten? Snelle scanoplossingen om papieren documenten efficiënt te digitaliseren en nadien te verwerken.",
+    },
+    {
+      imageUrl: "https://www.qastan.be/swfiles/files/cyberveiligheid-voor-kmo.jpeg?nc=1715333282",
+      title: "DPO",
+      description: "Ontdek onze DPO-beveiligingsdiensten die de veiligheid van je gegevens waarborgen, met robuuste bescherming tegen bedreigingen en naleving van privacyvoorschriften.",
     },
   ];
   return (
@@ -53,7 +85,10 @@ function IT() {
         </div>
       </div>
       <Banner title="Samen duiken in de hardware en infrastructuur van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop hieronder voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een gesprek aan" />
+      <Title title="Wij zijn de oplossing voor al uw IT problemen" description="" />
       <CardDetail cardData={cardData} />
+      <LogoSlider />
+      <CardWImage />
     </>
   );
 }

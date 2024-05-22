@@ -11,8 +11,8 @@ import Blog from "./pages/Blog";
 import Team from "./pages/Team";
 import Support from "./pages/Support";
 import Partners from "./pages/Partners";
-import Digitalisering from "./pages/Digitalisering";
-import Automatisering from "./pages/Automatisering";
+import Digitalisering from "./pages/Digitaliseren";
+import Automatisering from "./pages/Automatiseren";
 import Plannen from "./pages/Plannen";
 import IT from "./pages/IT";
 import Footer from "./components/Footer";
@@ -32,8 +32,8 @@ const App: React.FC = () => {
         <Route path="/Team" element={<Team />} />
         <Route path="/Support" element={<Support />} />
         <Route path="/Partners" element={<Partners />} />
-        <Route path="/Digitalisering" element={<Digitalisering />} />
-        <Route path="/Automatisering" element={<Automatisering />} />
+        <Route path="/Digitaliseren" element={<Digitalisering />} />
+        <Route path="/Automatiseren" element={<Automatisering />} />
         <Route path="/Plannen" element={<Plannen />} />
         <Route path="/IT" element={<IT />} />
       </Routes>

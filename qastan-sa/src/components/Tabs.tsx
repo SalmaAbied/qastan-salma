@@ -16,7 +16,7 @@ const Tabs: React.FC = () => {
       <div className="flex flex-col justify-center items-center px-4 py-10">
         <nav className="text-xl flex flex-col sm:flex-row gap-2 pt-1 px-3 rounded-md cursor-pointer">
           <Tab tabId="option-1" activeTab={activeTab} onClick={handleTabClick}>
-            Digitalisering
+            Digitaliseren
           </Tab>
           <Tab tabId="option-2" activeTab={activeTab} onClick={handleTabClick}>
             Automatiseren
@@ -53,7 +53,9 @@ const DigitaliseringTab: React.FC = () => (
   <section id="option-1-panel" className="tab-content">
     <h2>Digitalisering</h2>
     <p className="text-lg pb-2">Archiveren, document management, digitaal ondertekenen, documentherkenning, structuur, workflow management, … Kies voor een papierloze organisatie!</p>
-    <a href="/Digitalisering" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">Meer informatie</a>
+    <a href="/Digitaliseren" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
+      Meer informatie
+    </a>
   </section>
 );
 
@@ -61,7 +63,9 @@ const AutomatiseringTab: React.FC = () => (
   <section id="option-2-panel" className="tab-content">
     <h2>Automatisering</h2>
     <p className="text-lg pb-2">100% focus op het maximaliseren van efficiëntie en productiviteit via integraties, koppelingen tussen systemen of een maatwerktoepassing om jouw organisatie aan te sturen.</p>
-    <a href="/Automatisering" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">Meer informatie</a>
+    <a href="/Automatiseren" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
+      Meer informatie
+    </a>
   </section>
 );
 
@@ -69,7 +73,9 @@ const PlannenTab: React.FC = () => (
   <section id="option-3-panel" className="tab-content">
     <h2>Plannen</h2>
     <p className="text-lg pb-2">Reduceer tijdverlies en optimaliseer productiviteit van werknemers, taken of machines. Optimaal aansturen van werknemers op basis van competenties, skills en taken.</p>
-    <a href="/Plannen" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">Meer informatie</a>
+    <a href="/Plannen" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
+      Meer informatie
+    </a>
   </section>
 );
 
@@ -77,7 +83,9 @@ const ITTab: React.FC = () => (
   <section id="option-4-panel" className="tab-content">
     <h2>IT-beheer</h2>
     <p className="text-lg pb-2">Één aanspreekpunt voor alle IT-uitdagingen in jouw organisatie. Heldere communicatie, sterke expertise en duidelijk visie. Wij zijn de IT-partner die je nodig hebt!</p>
-    <a href="/IT" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">Meer informatie</a>
+    <a href="/IT" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
+      Meer informatie
+    </a>
   </section>
 );
 

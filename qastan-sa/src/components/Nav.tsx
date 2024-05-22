@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../img/puffinWhiteLarge.png";
 import patroon from "../img/patroon.png";
+import { NavigationMenuDemo } from "./shadcn/navDropdown";
 
 const Nav: React.FC = () => {
   const location = useLocation();
@@ -36,6 +37,10 @@ const Nav: React.FC = () => {
 
   const shouldApplyRoundedClass = isScrolled || location.pathname !== "/";
 
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="relative sticky top-0 z-40">
       <div className="absolute top-0 right-10 z-40 pr-10">
@@ -43,9 +48,9 @@ const Nav: React.FC = () => {
           Support
         </Link>
       </div>
-      <nav className={`bg-darkblue ${shouldApplyRoundedClass ? "rounded-b-3xl" : ""} text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20 shadow-lg shadow-gray-500/50`}>
+      <nav className={`bg-darkblue ${shouldApplyRoundedClass ? "rounded-b-3xl shadow-lg shadow-gray-500/50" : ""} text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20`}>
         <div className="space-x-4">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <img src={logo} alt="Logo" className="h-12 w-auto" />
           </Link>
         </div>
@@ -64,37 +69,38 @@ const Nav: React.FC = () => {
 
           <ul className="flex flex-col space-y-6 mt-20 items-center px-4 md:flex-row md:space-y-0 z-10 md:space-x-4 md:mt-0 md:px-0">
             <li>
-              <Link to="/" className={`md:hidden lg:ml-6 font-medium text-lg ${location.pathname === "/" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/" className={`md:hidden lg:ml-6 font-medium text-lg ${location.pathname === "/" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Home
-              </Link>
-            </li>{" "}
-            <li>
-              <Link to="/Oplossingen" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Oplossingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
-                Oplossingen
               </Link>
             </li>
             <li>
-              <Link to="/Toepassingen" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Toepassingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <div className="">
+                <NavigationMenuDemo />
+              </div>
+            </li>
+            <li>
+              <Link to="/Toepassingen" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Toepassingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Toepassingen
               </Link>
             </li>
             <li>
-              <Link to="/Over" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Over" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Over" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Over" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Over ons
               </Link>
             </li>
             <li>
-              <Link to="/Contact" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Contact" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Contact" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Contact" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Contact
               </Link>
             </li>
             <li>
-              <Link to="/Blog" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Blog" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`}>
+              <Link to="/Blog" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Blog" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Blog
               </Link>
             </li>
             <li className="md:hidden">&copy; Qastan 2024</li>
           </ul>
+
           <button onClick={closeMobileMenu} className="absolute top-4 right-4 text-white focus:outline-none md:hidden">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
