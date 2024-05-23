@@ -187,7 +187,7 @@ const CardWImage: React.FC = () => {
     setCurrentPage(1);
   };
 
-  const cardsPerPage = 12;
+  const cardsPerPage = 8;
   const filteredCardData = selectedTags.length === 0 ? cardData : cardData.filter((card) => card.tags.some((tag) => selectedTags.includes(tag)));
   const totalPages = Math.ceil(filteredCardData.length / cardsPerPage);
   const currentCards = filteredCardData.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage);
