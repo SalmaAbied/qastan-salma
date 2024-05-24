@@ -6,6 +6,10 @@ import Newsletter from "./Newsletter";
 const Form: React.FC = () => {
   return (
     <>
+      <div className="container mx-auto pt-10">
+        <h1 className="text-4xl pl-5">Contact</h1>
+        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
+      </div>
       <div className="relative flex flex-col items-center justify-center min-h-screen p-8">
         <Background />
         <div className="relative z-10 flex flex-col w-full max-w-4xl rounded-3xl shadow-lg md:flex-row">
