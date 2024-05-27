@@ -33,6 +33,9 @@ interface CardWSymbolProps {
   title: string;
   description: string;
   icon: string;
+  gridColumn?: string;
+  button?: string;
+  className?: string;
 }
 
 // banner detail page
