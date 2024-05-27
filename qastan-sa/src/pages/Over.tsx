@@ -1,8 +1,8 @@
 import React from "react";
 import Timeline from "../components/Timeline";
-import Intro from "../components/IntroGrid";
 import CardWSymbol from "../components/CardWSymbol";
 import Title from "../components/Title";
+import HeroWText from "../components/HeroWText";
 
 const cardInfo = [
   {
@@ -41,7 +41,7 @@ const cardInfo = [
 function Over() {
   return (
     <>
-      <Intro />
+      <HeroWText badgeText="Qastan" heading="Over ons" paragraph="Qastan is een Belgisch familiebedrijf dat gespecialiseerd is in het ontwikkelen en aanbieden van software en hardware. We noemen onszelf ook wel de digitale architecten voor jouw organisatie of bedrijf. Net als de papegaaiduiker in ons logo, zijn onze medewerkers multi-getalenteerd en kunnen ze het hele spectrum van digitale transformatie aan. Onze skills zijn de bouwstenen om de nodige digitale fundamenten van je onderneming te bouwen. Zo kan jij als ondernemer verder doen waar je echt goed in bent en je business laten groeien en versterken." imageUrl="https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
       <Title title="Waarom kiezen voor Qastan?" description="" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 container mx-auto">
         {cardInfo.map((card, index) => (

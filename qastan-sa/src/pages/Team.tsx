@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import TeamCard from "../components/PersonalCard";
+import TeamTwo from "../components/PersonalCardTwo";
 
 function Team() {
   return (
-    <div>
-      Team
-    </div>
-  )
+    <>
+      <TeamCard />
+      <TeamTwo/>
+    </>
+  );
 }
 
-export default Team
+export default Team;

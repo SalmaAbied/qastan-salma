@@ -1,7 +1,6 @@
 import React from "react";
 import cirkel from "../img/cirkel.png";
 
-
 function Banner({ title, description, buttonText, bgcolor }: Banner) {
   return (
     <div className={`relative bg-${bgcolor} shadow-lg shadow-darkblue/50 h-auto container mx-auto rounded-2xl my-10 text-white p-8 md:p-12 lg:p-20`}>

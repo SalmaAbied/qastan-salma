@@ -97,11 +97,7 @@ function LogoSlider() {
             <div key={partner.id} className="px-2">
               <div className="border-2 border-darkblue rounded-3xl">
                 <div className="p-4 flex justify-center">
-                  <img
-                    src={partner.logoUrl}
-                    alt={partner.name}
-                    className="w-36 h-36 object-contain"
-                  />
+                  <img src={partner.logoUrl} alt={partner.name} className="w-36 h-36 object-contain" />
                 </div>
               </div>
             </div>

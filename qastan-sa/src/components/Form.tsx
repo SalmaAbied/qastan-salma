@@ -9,8 +9,8 @@ const Form: React.FC = () => {
         <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
       </div>
       <div className="flex flex-col container items-center mx-auto relative z-20 py-20">
-        <div className="z-10 flex flex-col w-full max-w-4xl rounded-3xl shadow-lg md:flex-row">
-          <div className="flex flex-col justify-between p-8 md:w-1/2 bg-darkblue text-white rounded-t-3xl md:rounded-tl-3xl md:rounded-bl-3xl md:rounded-tr-none">
+        <div className="z-10 flex flex-col w-full max-w-4xl rounded-xl shadow-lg md:flex-row">
+          <div className="flex flex-col justify-between p-8 md:w-1/2 bg-darkblue text-white rounded-t-xl md:rounded-tl-xl md:rounded-bl-xl md:rounded-tr-none">
             <div className="space-y-4">
               <h1 className="text-2xl font-semibold">Qastan Kuurne</h1>
               <div className="flex items-center space-x-3">
@@ -34,19 +34,19 @@ const Form: React.FC = () => {
             <div>
               <p>Volg ons:</p>
               <div className="flex space-x-3 mt-2">
-                <a href="https://www.facebook.com/QastanIT" target="_blank" className="w-8 h-8 flex items-center justify-center text-white">
+                <a href="https://www.facebook.com/QastanIT" target="_blank" className="w-8 h-8 flex items-center justify-center text-white hover:text-darkorange transition duration-300">
                   <Facebook />
                 </a>
-                <a href="https://www.instagram.com/qastan_it/" target="_blank" className="w-8 h-8 flex items-center justify-center text-white">
+                <a href="https://www.instagram.com/qastan_it/" target="_blank" className="w-8 h-8 flex items-center justify-center text-white hover:text-darkorange transition duration-300">
                   <Instagram />
                 </a>
-                <a href="https://www.linkedin.com/company/qastan-it/?originalSubdomain=be" target="_blank" className="w-8 h-8 flex items-center justify-center text-white">
+                <a href="https://www.linkedin.com/company/qastan-it/?originalSubdomain=be" target="_blank" className="w-8 h-8 flex items-center justify-center text-white hover:text-darkorange transition duration-300">
                   <Linkedin />
                 </a>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center p-8 bg-white md:w-1/2 rounded-b-3xl md:rounded-br-3xl md:rounded-tr-3xl">
+          <div className="flex flex-col justify-center p-8 bg-white md:w-1/2 rounded-b-xl md:rounded-r-3xl md:rounded-tr-xl">
             <form className="z-10 space-y-4" autoComplete="off">
               <h3 className="text-xl font-semibold text-gray-800">Contacteer ons</h3>
               <div>

@@ -17,8 +17,8 @@ interface HeroWTextProps {
   badgeText: string;
   heading: string;
   paragraph: string;
-  buttonText: string;
-  buttonLink: string;
+  buttonText?: string;
+  buttonLink?: string;
   imageUrl: string;
 }
 
@@ -45,4 +45,10 @@ interface Banner {
   description: string;
   buttonText: string;
   bgcolor: string;
+}
+
+// timeline
+interface Event {
+  year: string;
+  title: string;
 }

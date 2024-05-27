@@ -3,7 +3,6 @@ import pattern from "../img/patroon.png";
 import Card from "./Card";
 import Typed from "typed.js";
 
-
 const Hero: React.FC = () => {
   useEffect(() => {
     const options = {

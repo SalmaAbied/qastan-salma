@@ -1,14 +1,7 @@
-// src/components/CardWSymbol.tsx
 import { Hourglass, ShieldOff, Shuffle, TriangleAlert, Link, Database, Merge, Sheet, Calendar, GraduationCap, Briefcase, BarChart, Settings, UserMinus, Lock, Layers, Users, Code } from "lucide-react";
 import React from "react";
 
-interface CardWSymbolProps {
-  title: string;
-  description: string;
-  icon: string;
-  button?: string;
-  className?: string;
-}
+
 
 function CardWSymbol({ title, description, icon, button, className }: CardWSymbolProps) {
   const selectIcon = (icon: string) => {

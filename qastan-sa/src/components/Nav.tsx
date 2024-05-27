@@ -64,7 +64,7 @@ const Nav: React.FC = () => {
         </div>
 
         <div className={`fixed top-0 left-0 w-full h-full bg-darkblue z-20 transform flex justify-center items-center md:justify-end ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 md:relative md:translate-x-0 md:flex md:items-center md:space-x-4`} onClick={closeMobileMenu}>
-          <div className="md:hidden absolute left-0 top-0 w-80 h-80 bg-cover bg-center z-0" style={{ backgroundImage: `url(${patroon})`, backgroundPosition: "top left", backgroundSize: "contain", backgroundRepeat: "no-repeat", zIndex: 1, opacity: 50, }}></div>
+          <div className="md:hidden absolute left-0 top-0 w-80 h-80 bg-cover bg-center z-0" style={{ backgroundImage: `url(${patroon})`, backgroundPosition: "top left", backgroundSize: "contain", backgroundRepeat: "no-repeat", zIndex: 1, opacity: 50 }}></div>
           <div className="md:hidden absolute left-10 bottom-10 w-12 h-12 bg-cover bg-center z-0" style={{ backgroundImage: `url(${logo})` }}></div>
 
           <ul className="flex flex-col space-y-6 mt-20 items-center px-4 md:flex-row md:space-y-0 z-10 md:space-x-4 md:mt-0 md:px-0">
