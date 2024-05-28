@@ -69,7 +69,7 @@ function Automatisering() {
           ))}
         </div>
       </div>
-      <Banner title="Samen duiken in de automatisatie van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een demo aan" bgcolor="darkblue" />
+      <Banner title="Samen duiken in de automatisatie van jouw onderneming?" description="We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen! Benieuwd naar wat we voor jou kunnen betekenen? Klik op de 'Demo' knop voor een voorproefje van onze oplossingen in actie." buttonText="Vraag een demo aan" buttonLink="/Contact" bgcolor="darkblue" />
       <Title title="Mee(r) automatiseren" description='"Digitale automatisering gaat niet alleen over het stroomlijnen van taken; het is de symfonie die efficiëntie, innovatie en vooruitgang harmoniseert in het moderne technologische landschap."' />
       <CardDetail cardData={cardData} />
       <LogoSlider />

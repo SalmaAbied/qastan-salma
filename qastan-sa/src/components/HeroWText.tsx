@@ -7,11 +7,13 @@ const HeroWText: React.FC<HeroWTextProps> = ({ badgeText, heading, paragraph, bu
         <span className="bg-lightblue text-white text-sm font-bold py-2 px-4 rounded-full">{badgeText}</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight break-words">{heading}</h1>
-          <p className="mt-4 text-lg mb-10 break-words text-gray-700">{paragraph}</p>
+        <div className="flex flex-col justify-between">
+          <div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight break-words">{heading}</h1>
+            <p className="mt-4 text-lg mb-10 break-words text-gray-700">{paragraph}</p>
+          </div>
           {buttonText && (
-            <a href={buttonLink} className="inline-block py-2 px-4 bg-darkorange transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
+            <a href={buttonLink} className="inline-block py-2 px-4 bg-darkorange transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium w-fit">
               {buttonText}
             </a>
           )}

@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import GridPartners from "../components/GridPartners";
+import Banner from "../components/BannerDetail";
 
 function Partners() {
   return (
-    <div>
-      Partners
-    </div>
-  )
+    <>
+      <GridPartners />
+      <Banner title="Let's team up!" description="Laat ons de mogelijkheden samen bekijken. Contacteer ons voor een samenwerking." buttonText="Contacteer ons" buttonLink="/Contact" bgcolor="darkblue" />
+    </>
+  );
 }
 
-export default Partners
+export default Partners;

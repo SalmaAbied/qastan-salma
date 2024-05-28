@@ -8,8 +8,8 @@ const SubscribeToNewsletter = () => {
           <span className="rounded-lg bg-lightblue py-px px-2 text-sm text-blue-800">Maandelijkse nieuwsbrief</span>
           <h3 className="mt-2 max-w-2xl text-center text-2xl font-bold leading-tight sm:text-3xl md:text-4xl md:leading-tight">Blijf op de hoogte door je in te schrijven voor onze nieuwsbrief</h3>
           <form action="" className="mx-auto mt-4 flex w-full max-w-md flex-col gap-3 sm:flex-row sm:gap-0">
-            <input type="email" name="email" id="email" className="grow rounded border-2 border-gray-300 py-3 px-3 focus:border-darkblue focus:outline-none sm:rounded-l-md sm:rounded-r-none sm:border-r-0" placeholder="E-mailadres" />
-            <button type="submit" className="rounded-lg bg-darkblue hover:bg-lightblue transition duration-300 px-5 py-4 font-bold text-white sm:rounded-l-none sm:rounded-r-lg">Schrijf je in</button>
+            <input type="email" name="email" id="email" className="grow rounded-full border-2 border-gray-300 py-3 px-3 focus:border-darkblue focus:outline-none sm:rounded-l-full sm:rounded-r-none sm:border-r-0" placeholder="E-mailadres" />
+            <button type="submit" className="rounded-full bg-darkblue hover:bg-lightblue transition duration-300 px-5 py-4 font-bold text-white sm:rounded-l-none sm:rounded-r-full">Schrijf je in</button>
           </form>
         </div>
       </div>

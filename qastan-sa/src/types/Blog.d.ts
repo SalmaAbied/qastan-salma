@@ -32,10 +32,11 @@ interface TitleProps {
 interface CardWSymbolProps {
   title: string;
   description: string;
-  icon: string;
+  icon?: string;
   gridColumn?: string;
   button?: string;
   className?: string;
+  tag?: string;
 }
 
 // banner detail page
@@ -44,6 +45,7 @@ interface Banner {
   title: string;
   description: string;
   buttonText: string;
+  buttonLink: string;
   bgcolor: string;
 }
 
