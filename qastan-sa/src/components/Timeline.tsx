@@ -66,7 +66,7 @@ const Timeline: React.FC = () => {
   return (
     <>
       <div className="container mx-auto px-10 md:px-0">
-        <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Ons verhaal</h2>
+        <h2 className="mb-1 text-4xl font-extrabold leading-tight text-gray-900">Ons verhaal</h2>
         <p className="mb-12 text-base italic text-gray-500 md:w-1/2">Ontdek hoe Qastan zich sinds 1998 heeft ontwikkeld van een eenmanszaak tot een toonaangevend familiebedrijf in de IT-sector, met meer dan 25 jaar expertise in het leveren van innovatieve en betrouwbare IT-oplossingen.</p>
         <div className="container mx-auto px-4">
           <div className="relative p-4 pb-20">

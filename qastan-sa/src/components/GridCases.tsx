@@ -4,7 +4,7 @@ function TestimoniesSection() {
   return (
     <section id="testimonies" className="py-20">
       <div className="container relative flex flex-col justify-between h-full px-10 mx-auto xl:px-0 mt-5">
-        <h2 className="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Lees onze klanten hun ervaringen</h2>
+        <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Lees onze klanten hun ervaringen</h2>
         <p className="mb-12 text-base italic text-gray-500">Lees hier enkele reviews van onze trouwe klanten</p>
         <div className="w-full">
           <div className="flex flex-col w-full mb-10 sm:flex-row">
