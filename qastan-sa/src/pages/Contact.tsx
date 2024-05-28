@@ -9,8 +9,8 @@ function Contact() {
     <>
       <Background />
       <ContactSection />
-      <Map />
       <Newsletter />
+      <Map />
     </>
   );
 }

@@ -1,7 +1,5 @@
-import { Hourglass, ShieldOff, Shuffle, TriangleAlert, Link, Database, Merge, Sheet, Calendar, GraduationCap, Briefcase, BarChart, Settings, UserMinus, Lock, Layers, Users, Code } from "lucide-react";
+import { Hourglass, ShieldOff, Shuffle, TriangleAlert, Link, Database, Merge, Sheet, Calendar, GraduationCap, Briefcase, BarChart, Settings, UserMinus, Lock, Layers, Users, Code, Gem, Star, Puzzle, Rocket } from "lucide-react";
 import React from "react";
-
-
 
 function CardWSymbol({ title, description, icon, button, className }: CardWSymbolProps) {
   const selectIcon = (icon: string) => {
@@ -42,13 +40,21 @@ function CardWSymbol({ title, description, icon, button, className }: CardWSymbo
         return <Users size={32} />;
       case "Code":
         return <Code size={32} />;
+      case "Gem":
+        return <Gem size={32} />;
+      case "Star":
+        return <Star size={32} />;
+      case "Puzzle":
+        return <Puzzle size={32} />;
+      case "Rocket":
+        return <Rocket size={32} />;
       default:
         return null;
     }
   };
 
   return (
-    <div className={`rounded-xl ${className} bg-slate-50 shadow-lg shadow-lightgray/50 p-6 flex flex-col justify-between`}>
+    <div className={`mx-10 md:mx-0 rounded-xl ${className} bg-slate-50 shadow-lg shadow-lightgray/50 p-6 flex flex-col justify-between`}>
       <div className="flex items-center mb-4">
         <span className="text-darkorange mr-2">{selectIcon(icon)}</span>
         <h1 className="text-xl font-semibold">{title}</h1>

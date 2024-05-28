@@ -3,22 +3,23 @@ import Timeline from "../components/Timeline";
 import CardWSymbol from "../components/CardWSymbol";
 import Title from "../components/Title";
 import HeroWText from "../components/HeroWText";
+import TestimoniesSection from "../components/GridCases";
 
 const cardInfo = [
   {
     title: "Transparantie",
     description: "Vanaf de start van het project weet je perfect hoeveel het totale plaatje zal kosten. Je krijgt voldoende inzicht in het project en hoeft je geen zorgen te maken over verborgen kosten. Reken maar op een mooie return-on-investment!",
-    icon: "TriangleAlert",
+    icon: "Gem",
   },
   {
     title: "Kwaliteit",
     description: "Qastan quality, daar kan je op rekenen! Het is niet alleen een streefdoel, maar ook het resultaat van doordachte ontwikkeling van onze producten. We bieden onze klanten heel wat opties aan die bij concurrenten vaak niet terug te vinden zijn.",
-    icon: "Hourglass",
+    icon: "Star",
   },
   {
     title: "Altijd een oplossing",
     description: "Een samenwerking aangaan met ons, betekent ook samen groeien. Heel wat oplossingen uit ons aanbod zijn tot stand gekomen door samenwerkingen met klanten op maat. Bij ons hoef je niet te kiezen. Als onze standaardproducten niet 100% geschikt zijn voor jouw onderneming, passen we ze graag aan. Samen bouwen we aan een toekomstgerichte oplossing die perfect bij je past.",
-    icon: "ShieldOff",
+    icon: "Puzzle",
   },
   {
     title: "Wij spreken uw (code)taal",
@@ -28,7 +29,7 @@ const cardInfo = [
   {
     title: "Efficiënt",
     description: "Ons hoofddoel is om bestaande processen te optimaliseren. Dit doen we op de meest efficiënte manier! Onze adviezen, analyses en ondersteuning zijn allemaal bedoeld om het rendement van jouw onderneming maximaal te vergroten.",
-    icon: "Shuffle",
+    icon: "Rocket",
   },
   {
     title: "Samen duiken in de digitalisering van jouw onderneming?",
@@ -48,10 +49,8 @@ function Over() {
           <CardWSymbol key={index} title={card.title} description={card.description} icon={card.icon} button={card.button} className={index === 5 ? "col-span-1 lg:col-span-3 bg-slate-800 text-white" : ""} />
         ))}
       </div>
-      <div className="py-10">
-        <Title title="Ons verhaal" description="Ontdek hoe Qastan zich sinds 1998 heeft ontwikkeld van een eenmanszaak tot een toonaangevend familiebedrijf in de IT-sector, met meer dan 25 jaar expertise in het leveren van innovatieve en betrouwbare IT-oplossingen." />
-        <Timeline />
-      </div>
+      <TestimoniesSection />
+      <Timeline />
     </>
   );
 }

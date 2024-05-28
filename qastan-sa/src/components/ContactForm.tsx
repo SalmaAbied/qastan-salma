@@ -12,7 +12,7 @@ const ContactSection = () => {
             <p className="text-sm md:text-lg">Neem vandaag nog contact op met ons en wij zullen u zo snel mogelijk helpen</p>
           </div>
         </div>
-        <div className="w-full h-[1200px] md:h-[60vh] lg:h-[60vh] relative">
+        <div className="w-full h-[1100px] md:h-[60vh] xl:h-[70vh] 2xl:h-[50vh] relative">
           <div className="absolute -top-[3%] md:-top-[20%] left-1/2 -translate-x-1/2 grid grid-cols-1 md:grid-cols-3 h-fit w-4/5 md:w-[90%] lg:w-4/5 rounded-lg shadow-lg overflow-hidden text-white">
             <div className="p-2 md:p-4 h-full bg-darkblue col-span-2">
               <form>
@@ -30,7 +30,7 @@ const ContactSection = () => {
                     <label className="font-semibold">
                       E-mailadres <span className="text-red-500">&#42;</span>
                     </label>
-                    <input className="border-[1px] border-white bg-gray-800 p-2 rounded-md" placeholder="Vul hier je e-mailadres in" required name="email" type="email" />
+                    <input className="border-[1px] border-white bg-gray-800 p-2 rounded-md" placeholder="Vul hier je e-mailadres in" required type="email" name="email" id="email" />
                   </div>
                   <div className="flex flex-col gap-1">
                     <label className="font-semibold">
@@ -69,7 +69,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="py-6 px-4 md:h-full bg-darkblue bg-opacity-10 text-black flex flex-col justify-between">
+            <div className="py-6 px-4 md:h-full bg-slate-50  text-black flex flex-col justify-between">
               <h1 className="text-2xl font-bold">Adres</h1>
               <div className="mb-6">
                 <h3 className="text-lg font-semibold">Qastan Kuurne</h3>
