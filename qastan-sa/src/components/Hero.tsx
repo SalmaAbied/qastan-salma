@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   }, []);
   return (
     <div className="relative">
-      <div className="h-[calc(100vh-90px)] relative bg-darkblue text-white rounded-b-3xl 2xl:h-[calc(100vh-300px)]">
+      <div className="h-[calc(100vh-90px)] relative bg-darkblue text-white rounded-b-lg 2xl:h-[calc(100vh-300px)]">
         <div
           className="flex flex-col justify-end 2xl:justify-center"
           style={{

@@ -1,12 +1,12 @@
 import React from "react";
 import TeamCard from "../components/PersonalCard";
-import TeamTwo from "../components/PersonalCardTwo";
+import Banner from "../components/BannerDetail";
 
 function Team() {
   return (
     <>
       <TeamCard />
-      <TeamTwo/>
+      <Banner title="Kom bij ons team!" description="Zin om mee te duiken in onze uitdagende projecten? Gemotiveerde collega’s zijn altijd welkom!" buttonText="Bekijk onze vacatures" bgcolor="darkblue" />
     </>
   );
 }

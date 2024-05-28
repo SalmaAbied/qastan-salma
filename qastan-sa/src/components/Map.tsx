@@ -16,7 +16,7 @@ const MapComponent: React.FC = () => {
   const position: [number, number] = [50.8371, 3.2776];
 
   return (
-    <MapContainer center={position} zoom={15} style={{ height: "400px", width: "100%" }} attributionControl={false}>
+    <MapContainer center={position} zoom={15} style={{ height: "400px", width: "100%" }} attributionControl={false} className="z-30">
       <TileLayer url="https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}" id="mapbox/streets-v11" accessToken="pk.eyJ1Ijoic2FsbWEwNCIsImEiOiJjbGg1ejA0cWkwMHp2M2RtcXBqaGhheXZqIn0.XURmzTwlDcpDzNPssuXGMg" tileSize={512} zoomOffset={-1} attribution="" />
       <Marker position={position}>
         <Popup className="custom-popup">

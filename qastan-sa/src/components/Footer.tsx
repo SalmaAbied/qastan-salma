@@ -5,7 +5,7 @@ import logo from "../img/puffinWhiteLarge.png";
 function Footer() {
   return (
     <>
-      <footer className="bg-darkblue rounded-t-3xl text-white">
+      <footer className="bg-darkblue rounded-t-lg text-white">
         <div className="container mx-auto py-10 px-5">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="flex items-center">

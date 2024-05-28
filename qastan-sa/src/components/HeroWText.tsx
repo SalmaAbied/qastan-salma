@@ -17,7 +17,7 @@ const HeroWText: React.FC<HeroWTextProps> = ({ badgeText, heading, paragraph, bu
           )}
         </div>
         <div className="flex justify-center">
-          <img src={imageUrl} alt="Hero" className="rounded-3xl w-full h-auto max-w-md md:max-w-none object-cover shadow-lg shadow-darkblue/50" />
+          <img src={imageUrl} alt="Hero" className="rounded-lg w-full h-auto max-w-md md:max-w-none object-cover shadow-lg shadow-darkblue/50" />
         </div>
       </div>
     </div>

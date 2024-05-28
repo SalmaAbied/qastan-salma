@@ -215,8 +215,8 @@ const CardWImage: React.FC = () => {
         </div>
         <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 container mx-auto">
           {currentCards.map((card, index) => (
-            <div key={index} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-3xl shadow-lg mb-8 flex flex-col">
-              <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-3xl">
+            <div key={index} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-lg shadow-lg mb-8 flex flex-col">
+              <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
                 <img src={card.imageUrl} alt={card.title} />
               </div>
               <div className="overflow-hidden relative flex-grow px-4">
