@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.6.0",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@react-leaflet/core": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -20,6 +21,7 @@
     "http": "^0.0.1-security",
     "https": "^1.0.0",
     "leaflet": "^1.9.4",
+    "lottie-web": "^5.12.2",
     "lucide-react": "^0.378.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
