@@ -18,7 +18,7 @@ const teamData = [
     image: "https://th.bing.com/th/id/OIG3.8n3PhRQR.asKhNUULkrq?pid=ImgGn",
     instagram: "https://www.instagram.com/qastan_it/",
     facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
-    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
+    linkedin: "https://www.linkedin.com/in/arne-debruyne-603496103/",
   },
   {
     name: "Hanne Glas",
@@ -27,7 +27,7 @@ const teamData = [
     image: "https://th.bing.com/th/id/OIG3..RHs3IgdGs9_xErmZpLJ?pid=ImgGn",
     instagram: "https://www.instagram.com/qastan_it/",
     facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
-    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
+    linkedin: "https://www.linkedin.com/in/hanne-glas-489069b1/",
   },
 ];
 
