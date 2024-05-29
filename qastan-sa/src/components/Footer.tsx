@@ -37,10 +37,10 @@ function Footer() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
             <div>
-              <div className="mb-5">
+              <a href="/">
                 <img src={logo} alt="logo" className="max-w-40" />
-              </div>
-              <div className="flex space-x-3">
+              </a>
+              <div className="flex space-x-3 mt-5">
                 <span className="text-lg font-medium">Volg ons</span>
                 <a href="https://www.facebook.com/profile.php?id=100090413298416&locale=nl_NL" target="_blank" className="text-2xl text-darkorange">
                   <Facebook />
@@ -112,12 +112,12 @@ function Footer() {
               <p className="text-center text-darkblue md:text-left text-sm">Copyright &copy; 2024 Qastan</p>
               <ul className="flex flex-wrap">
                 <li className="ml-5 border-r border-darkblue pr-5">
-                  <a href="#" className="text-sm text-darkblue hover:text-darkorange transition duration-300">
+                  <a href="/Cookies" className="text-sm text-darkblue hover:text-darkorange transition duration-300">
                     Cookies &amp; Privacy
                   </a>
                 </li>
                 <li className="ml-5 border-r border-darkblue pr-5">
-                  <a href="#" className="text-sm text-darkblue hover:text-darkorange transition duration-300">
+                  <a href="/AlgemeneVoorwaarden" className="text-sm text-darkblue hover:text-darkorange transition duration-300">
                     Algemene voorwaarden
                   </a>
                 </li>

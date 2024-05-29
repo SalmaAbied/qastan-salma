@@ -54,7 +54,7 @@ const ContactSection = () => {
                     <input type="checkbox" className="form-checkbox" />
                     <span className="ml-2 text-sm">
                       Ik accepteer de{" "}
-                      <a href="/Privacy" className="underline hover:text-darkorange transition duration-300">
+                      <a href="/Cookies" className="underline hover:text-darkorange transition duration-300">
                         privacyvoorwaarden
                       </a>
                     </span>
@@ -64,7 +64,7 @@ const ContactSection = () => {
 
               <div className="flex items-center justify-center md:justify-end py-4 px-8">
                 <button className="py-2 px-4 text-white bg-darkorange rounded focus:outline-none hover:bg-lightblue transition duration-300">
-                  <span className="text-xl">Verstuur</span>
+                  <span className="text-lg">Verstuur</span>
                 </button>
               </div>
             </div>

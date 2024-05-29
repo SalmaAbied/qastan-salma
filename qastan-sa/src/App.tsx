@@ -16,6 +16,8 @@ import Automatisering from "./pages/Automatiseren";
 import Plannen from "./pages/Plannen";
 import IT from "./pages/IT";
 import Footer from "./components/Footer";
+import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
+import Cookies from "./pages/Cookies";
 
 const App: React.FC = () => {
   return (
@@ -36,6 +38,8 @@ const App: React.FC = () => {
         <Route path="/Automatiseren" element={<Automatisering />} />
         <Route path="/Plannen" element={<Plannen />} />
         <Route path="/IT" element={<IT />} />
+        <Route path="/AlgemeneVoorwaarden" element={<AlgemeneVoorwaarden />} />
+        <Route path="/Cookies" element={<Cookies />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,12 +1,42 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import React from "react";
 
+const teamData = [
+  {
+    name: "Geert Debruyne",
+    position: "CEO",
+    description: "Lorem ipsum",
+    image: "https://th.bing.com/th/id/OIG3.xtAItkukGm5ehjdiPvP5?pid=ImgGn",
+    instagram: "https://www.instagram.com/qastan_it/",
+    facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
+    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
+  },
+  {
+    name: "Arne Debruyne",
+    position: "COO",
+    description: "Lorem ipsum",
+    image: "https://th.bing.com/th/id/OIG3.8n3PhRQR.asKhNUULkrq?pid=ImgGn",
+    instagram: "https://www.instagram.com/qastan_it/",
+    facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
+    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
+  },
+  {
+    name: "Hanne Glas",
+    position: "Project Manager",
+    description: "Lorem ipsum",
+    image: "https://th.bing.com/th/id/OIG3..RHs3IgdGs9_xErmZpLJ?pid=ImgGn",
+    instagram: "https://www.instagram.com/qastan_it/",
+    facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
+    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
+  },
+];
+
 const TeamCard = () => {
   return (
     <div className="mb-16">
       <div className="container flex justify-center mx-auto pt-16">
         <div>
-          <p className="text-lightgray text-lg text-center font-normal pb-3">Ons team</p>
+          <p className="text-lightgray text-lg text-center font-normal pb-3">THE PUFFIN TEAM</p>
           <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">De getalenteerde mensen achter de schermen van Qastan</h1>
         </div>
       </div>
@@ -52,35 +82,5 @@ const TeamCard = () => {
     </div>
   );
 };
-
-const teamData = [
-  {
-    name: "Geert Debruyne",
-    position: "CEO",
-    description: "Lorem ipsum",
-    image: "https://th.bing.com/th/id/OIG3.xtAItkukGm5ehjdiPvP5?pid=ImgGn",
-    instagram: "https://www.instagram.com/qastan_it/",
-    facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
-    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
-  },
-  {
-    name: "Arne Debruyne",
-    position: "COO",
-    description: "Lorem ipsum",
-    image: "https://th.bing.com/th/id/OIG3.8n3PhRQR.asKhNUULkrq?pid=ImgGn",
-    instagram: "https://www.instagram.com/qastan_it/",
-    facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
-    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
-  },
-  {
-    name: "Arne Debruyne",
-    position: "COO",
-    description: "Lorem ipsum",
-    image: "https://th.bing.com/th/id/OIG3..RHs3IgdGs9_xErmZpLJ?pid=ImgGn",
-    instagram: "https://www.instagram.com/qastan_it/",
-    facebook: "https://www.facebook.com/QastanIT?locale=nl_NL",
-    linkedin: "https://www.linkedin.com/in/geertdebruyne/",
-  },
-];
 
 export default TeamCard;

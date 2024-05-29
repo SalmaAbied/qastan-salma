@@ -55,7 +55,9 @@ function Jobs() {
     <>
       <HeroWText badgeText="Jobs" heading="Werken bij qastan" paragraph="Zin om mee te duiken in onze uitdagende projecten? Gemotiveerde collega’s zijn altijd welkom!" buttonText="Bekijk onze vacatures" buttonLink="#jobs" imageUrl="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" />
       <CardDetail cardData={cardData} />
-      <CardWImage title="Ontdek onze openstaande vacatures" cardWImageData={cardWImageData} tags={tags} />
+      <div id="jobs">
+        <CardWImage title="Ontdek onze openstaande vacatures" cardWImageData={cardWImageData} tags={tags} />
+      </div>
     </>
   );
 }

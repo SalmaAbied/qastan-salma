@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 interface CardWImageProps {
   cardWImageData: CardProps[];
   tags: string[];
-  title: string; 
+  title: string;
 }
 
 const tagColors: { [key: string]: string } = {
@@ -60,7 +60,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
     <>
       <div className="pb-20">
         <div className="container mx-auto pt-56 md:pt-5 pb-10">
-          <h1 className="pl-5 text-4xl">{title}</h1> 
+          <h1 className="pl-5 text-4xl">{title}</h1>
           <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
           <div className="pl-5">
             <h2 className="text-2xl font-semibold mb-4">Filters</h2>
@@ -73,7 +73,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
           {currentCards.map((card, index) => (
             <div key={index} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-lg shadow-lg mb-8 flex flex-col">
               <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
-                <img src={card.imageUrl} alt={card.title} className="md:h-96 object-cover" />
+                <img src={card.imageUrl} alt={card.title} className="lg:h-96 2xl:h-fit object-cover" />
               </div>
               <div className="overflow-hidden relative flex-grow px-4">
                 <ul className="list-none my-5 flex">

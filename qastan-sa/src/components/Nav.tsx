@@ -42,7 +42,7 @@ const Nav: React.FC = () => {
   };
 
   return (
-    <div className="relative sticky top-0 z-40">
+    <div className="relative sticky top-0 z-50">
       <div className="absolute top-0 right-10 z-40 pr-10">
         <Link to="/Support" className="bg-darkorange font-semibold text-white px-4 py-2 rounded-b-lg text-sm hover:bg-lightblue transition duration-300">
           Support

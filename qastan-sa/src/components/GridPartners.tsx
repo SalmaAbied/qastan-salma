@@ -2,6 +2,8 @@ import React from "react";
 
 function GridPartners() {
   return (
+    <>
+    
     <section id="testimonies" className="py-20">
       <div className="container relative flex flex-col justify-between h-full px-10 mx-auto xl:px-0 mt-5">
         <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Partners</h2>
@@ -12,10 +14,10 @@ function GridPartners() {
               <div className="relative h-full ml-0 mr-0 sm:mr-10">
                 <div className="relative h-full p-5 bg-slate-50 rounded-lg shadow-lg">
                   <div className="flex items-center -mt-1">
-                    <img src="https://www.qastan.be/swfiles/files/cropped-cropped-cropped-cropped-ccaps-icon-1-mob.png?nc=1715848923" alt="" className="w-12 h-12 rounded-full shadow-lg object-cover" />
+                    <img src="https://www.qastan.be/swfiles/files/cropped-cropped-cropped-cropped-ccaps-icon-1-mob.png?nc=1715848923" alt="" className="w-24 h-24 rounded-full shadow-lg object-cover" />
                     <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">CCAPS</h3>
                   </div>
-                  <p className="mb-2 text-gray-600">CCAPS is dé referentie voor alle zakelijk printoplossingen en multifunctionals in West en Oost-Vlaanderen. Met onze eigen digitaliseringsoplossingen (o.a. FITdoc DMS) hebben we tevens een standaard integratie op alle toestellen van CCAPS. Zo geniet je als klant meteen van alle digitaliseringsvoordelen. Printen en scannen zonder zorgen start hier.</p>
+                  <p className="my-2 text-gray-600">CCAPS is dé referentie voor alle zakelijk printoplossingen en multifunctionals in West en Oost-Vlaanderen. Met onze eigen digitaliseringsoplossingen (o.a. FITdoc DMS) hebben we tevens een standaard integratie op alle toestellen van CCAPS. Zo geniet je als klant meteen van alle digitaliseringsvoordelen. Printen en scannen zonder zorgen start hier.</p>
                 </div>
               </div>
             </div>
@@ -54,21 +56,11 @@ function GridPartners() {
                 </div>
               </div>
             </div>
-            <div className="w-full sm:w-1/2">
-              <div className="relative h-full ml-0 md:mr-10">
-                <div className="relative h-full p-5 bg-slate-100 rounded-lg shadow-lg">
-                  <div className="flex items-center -mt-1">
-                    <img src="https://www.qastan.be/swfiles/files/QastanPartner_Icasa-5-mob.png?nc=1715848923" alt="" className="w-12 h-12 rounded-full shadow-lg object-cover" />
-                    <h3 className="my-2 ml-3 text-lg font-bold text-gray-800">KV Kortrijk</h3>
-                  </div>
-                  <p className="mb-2 text-gray-600">Als een professionele voetbalclub vertrouwen we op Qastan voor onze IT-infrastructuur en -ondersteuning. Hun toegewijde team heeft ons geholpen om onze digitale activiteiten te stroomlijnen en te verbeteren. We waarderen hun expertise en betrokkenheid bij ons succes.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 }
 
