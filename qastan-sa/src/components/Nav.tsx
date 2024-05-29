@@ -48,7 +48,7 @@ const Nav: React.FC = () => {
           Support
         </Link>
       </div>
-      <nav className={`bg-darkblue ${shouldApplyRoundedClass ? "rounded-b-lg shadow-lg shadow-gray-500/50" : ""} text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20`}>
+      <nav className={`bg-darkblue ${shouldApplyRoundedClass ? "rounded-b-lg drop-shadow-lg drop-shadow-gray-500/50" : ""} text-white px-4 pt-4 pb-4 flex justify-between items-center md:px-20`}>
         <div className="space-x-4">
           <Link to="/" onClick={handleLinkClick}>
             <img src={logo} alt="Logo" className="h-12 w-auto" />

@@ -90,8 +90,7 @@ function LogoSlider() {
   return (
     <>
       <div className="pt-44 container mx-auto">
-        <h1 className="pl-5 text-4xl">Onze partners</h1>
-        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
+        <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Onze partners</h2>
         <Slider ref={sliderRef} {...settings} className="py-10 flex justify-center">
           {partners.map((partner) => (
             <div key={partner.id} className="px-2">

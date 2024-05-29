@@ -71,18 +71,18 @@ const Timeline: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="relative p-4 pb-20">
             <div className="absolute inset-y-0 left-0 flex items-center">
-              <button onClick={() => scroll("left")} className="p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 focus:outline-none transition duration-300">
+              <button onClick={() => scroll("left")} className="p-2 bg-gray-200 rounded-full drop-shadow-md hover:bg-gray-300 focus:outline-none transition duration-300">
                 <ArrowLeft size={20} />
               </button>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center">
-              <button onClick={() => scroll("right")} className="p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 focus:outline-none transition duration-300">
+              <button onClick={() => scroll("right")} className="p-2 bg-gray-200 rounded-full drop-shadow-md hover:bg-gray-300 focus:outline-none transition duration-300">
                 <ArrowRight size={20} />
               </button>
             </div>
             <div ref={timelineRef} className="flex overflow-x-auto space-x-8 scrollbar-hide py-4 cursor-grab" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
               {events.map((event, index) => (
-                <div key={index} className="min-w-[200px] bg-slate-50 p-4 rounded-lg shadow-lg md:min-w-[250px] flex flex-col items-center">
+                <div key={index} className="min-w-[200px] bg-slate-50 p-4 rounded-lg drop-shadow-lg md:min-w-[250px] flex flex-col items-center">
                   <div className="bg-darkblue font-bold p-4 text-white rounded-full w-12 h-12 flex items-center justify-center">{event.year}</div>
                   <div className="mt-4 text-center">
                     <h3 className="text-lg mx-auto">{event.title}</h3>

@@ -15,8 +15,11 @@ const Tabs: React.FC = () => {
   return (
     <>
       <div className="container mx-auto pt-56 md:pt-24 lg:pt-56 xl:pt-2 sm:pt-5">
-        <h1 className="pl-5 text-4xl">Onze oplossingen</h1>
+        {/* <h1 className="pl-5 text-4xl">Onze oplossingen</h1>
         <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
+         */}
+        <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Onze oplossingen</h2>
+        <p className="mb-12 text-base italic text-gray-500">Ontdek al onze oplossingen en vraag vandaag nog de gepaste oplossing voor uw bedrijf</p>
       </div>
       <div className="flex flex-col justify-center items-center px-4 py-10">
         <nav className="text-xl flex flex-col sm:flex-row gap-2 pt-1 px-3 rounded-md cursor-pointer">
@@ -33,7 +36,7 @@ const Tabs: React.FC = () => {
             IT-beheer
           </Tab>
         </nav>
-        <main className="w-full text-black max-w-4xl sm:p-10 pt-2 sm:pt-4 overflow-hidden bg-slate-50 p-6 sm:p-10 sm:py-12 shadow-lg shadow-darkblue/50 w-full overflow-hidden rounded-xl duration-500 text-xl space-y-4">
+        <main className="w-full text-black max-w-4xl sm:p-10 pt-2 sm:pt-4 overflow-hidden bg-slate-50 p-6 sm:p-10 sm:py-12 drop-shadow-lg drop-shadow-darkblue/50 w-full overflow-hidden rounded-xl duration-500 text-xl space-y-4">
           {activeTab === "option-1" && <DigitaliseringTab animationData={digitaliserenAnimation} />}
           {activeTab === "option-2" && <AutomatiseringTab animationData={automatiserenAnimation} />}
           {activeTab === "option-3" && <PlannenTab animationData={plannenAnimation} />}
@@ -47,7 +50,7 @@ const Tabs: React.FC = () => {
 const Tab: React.FC<TabProps> = ({ tabId, activeTab, onClick, children }) => {
   const isActive = tabId === activeTab;
   return (
-    <div id={`${tabId}-nav`} className={`px-3 py-1 rounded-b-lg sm:rounded-b-none rounded-t-lg text-center cursor-pointer transition duration-300 hover:bg-slate-50 hover:shadow-lg hover:shadow-darkblue/50 ${isActive ? "bg-slate-50 shadow-lg shadow-darkblue/50 text-black" : ""}`} onClick={() => onClick(tabId)}>
+    <div id={`${tabId}-nav`} className={`px-3 py-1 rounded-b-lg sm:rounded-b-none rounded-t-lg text-center cursor-pointer transition duration-300 hover:bg-slate-50 hover:drop-shadow-lg hover:drop-shadow-darkblue/50 ${isActive ? "bg-slate-50 drop-shadow-lg drop-shadow-darkblue/50 text-black" : ""}`} onClick={() => onClick(tabId)}>
       {children}
     </div>
   );

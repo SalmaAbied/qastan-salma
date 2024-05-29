@@ -27,11 +27,11 @@ const textColors: { [key: string]: string } = {
 
 const FilterButton: React.FC<{ tag: string; selectedTags: string[]; toggleTag: (tag: string) => void }> = ({ tag, selectedTags, toggleTag }) => {
   const isSelected = selectedTags.includes(tag);
-  const bgColor = isSelected ? "bg-darkorange shadow-lg shadow-black/50" : tagColors[tag];
+  const bgColor = isSelected ? "bg-darkorange drop-shadow-lg drop-shadow-black/50" : tagColors[tag];
   const textColor = isSelected ? "text-white" : textColors[tag];
 
   return (
-    <button className={`rounded-full px-4 py-2 font-semibold shadow-lg shadow-blue-200/50 hover:brightness-75 transition duration-500 text-xs mr-2 mb-2 ${bgColor} ${textColor}`} onClick={() => toggleTag(tag)}>
+    <button className={`rounded-full px-4 py-2 font-semibold drop-shadow-lg drop-shadow-blue-200/50 hover:brightness-75 transition duration-500 text-xs mr-2 mb-2 ${bgColor} ${textColor}`} onClick={() => toggleTag(tag)}>
       {tag}
     </button>
   );
@@ -60,9 +60,10 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
     <>
       <div className="pb-20">
         <div className="container mx-auto pt-56 md:pt-5 pb-10">
-          <h1 className="pl-5 text-4xl">{title}</h1>
-          <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
-          <div className="pl-5">
+          {/* <h1 className="pl-5 text-4xl">{title}</h1>
+          <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" /> */}
+          <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900 my-10">{title}</h2>
+          <div>
             <h2 className="text-2xl font-semibold mb-4">Filters</h2>
             {tags.map((tag) => (
               <FilterButton key={tag} tag={tag} selectedTags={selectedTags} toggleTag={toggleTag} />
@@ -71,7 +72,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
         </div>
         <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 container mx-auto">
           {currentCards.map((card, index) => (
-            <div key={index} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-lg shadow-lg mb-8 flex flex-col">
+            <div key={index} className="bg-slate-50 drop-shadow-lg drop-shadow-darkblue/50 rounded-lg drop-shadow-lg mb-8 flex flex-col">
               <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
                 <img src={card.imageUrl} alt={card.title} className="lg:h-96 2xl:h-fit object-cover" />
               </div>

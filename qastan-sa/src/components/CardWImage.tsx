@@ -26,12 +26,13 @@ const CardWImage: React.FC = () => {
     <>
       <div className="pb-20">
         <div className="container mx-auto pt-56 md:pt-5 pb-10">
-          <h1 className="pl-5 text-4xl">Ontdek onze toepassingen</h1>
-          <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
+          {/* <h1 className="pl-5 text-4xl">Ontdek onze toepassingen</h1>
+          <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" /> */}
+          <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Ontdek onze toepassingen</h2>
         </div>
         <div className="flex flex-wrap container mx-auto justify-around xxl:w-3/4">
           {cardData.map((card, index) => (
-            <div key={index} className="bg-darkblue shadow-lg shadow-darkblue/50 rounded-xl shadow-lg md:ml-5 lg:ml-0 w-3/4 sm:w-min mb-8 flex flex-col">
+            <div key={index} className="bg-darkblue drop-shadow-lg drop-shadow-darkblue/50 rounded-xl drop-shadow-lg md:ml-5 lg:ml-0 w-3/4 sm:w-min mb-8 flex flex-col">
               <div className="sm:w-96 sm:h-96 overflow-hidden flex items-center rounded-t-xl">
                 <img src={card.imageUrl} alt={card.title} />
               </div>

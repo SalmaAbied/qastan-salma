@@ -5,7 +5,7 @@ function HeroDetail() {
   return (
     <div className="pt-10 container mx-auto px-2">
       <div
-        className="relative bg-darkblue rounded-t-lg md:rounded-lg overflow-hidden bg-darkblue shadow-lg shadow-darkblue/50"
+        className="relative bg-darkblue rounded-t-lg md:rounded-lg overflow-hidden bg-darkblue drop-shadow-lg drop-shadow-darkblue/50"
         style={{
           backgroundImage: `url(https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
           backgroundPosition: "top left",

@@ -69,7 +69,7 @@ const SimplifiedMarkup = () => {
                   </div>
                 </div>
                 <div className="h-full">
-                  <img src={partner.imgSrc} alt={partner.title} className="bg-white rounded-lg shadow-lg overflow-hidden aspect-video w-full h-full object-contain object-center" />
+                  <img src={partner.imgSrc} alt={partner.title} className="bg-white rounded-lg drop-shadow-lg overflow-hidden aspect-video w-full h-full object-contain object-center" />
                 </div>
               </div>
             ))}

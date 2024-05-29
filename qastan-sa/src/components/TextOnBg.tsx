@@ -3,7 +3,7 @@ import React from "react";
 function TextOnBg() {
   return (
     <>
-      <div className="container mx-auto bg-white shadow-lg rounded-lg my-10 py-20">
+      <div className="container mx-auto bg-white drop-shadow-lg rounded-lg my-10 py-20">
         <div className="mx-10">
           <h1 className="text-9xl font-bold">Cookies &amp; Privacy</h1>
           <h2 className="text-4xl mt-20 font-bold">Privacyverklaring</h2>
@@ -81,7 +81,13 @@ function TextOnBg() {
           <h3 className="text-2xl mt-10 font-bold">Wijzigingen</h3>
           <p className="mt-5">Wij behouden ons het recht voor om onze privacyverklaring (incl. cookie statement) op elk moment eenzijdig te wijzigen. De bijgewerkte versie van deze policy wordt steeds op dezelfde webpagina weergegeven en wordt bij publicatie onmiddellijk van toepassing.</p>
           <h3 className="text-2xl mt-10 font-bold">Vragen</h3>
-          <p className="mt-5">Mocht u na het lezen van de verklaring nog vragen hebben of antwoorden die u niet direct kunt terugvinden, dan kunt u steeds contact opnemen via: <a className="text-darkorange" href="mailto:info@qastan.be">info@qastan.be</a>.</p>
+          <p className="mt-5">
+            Mocht u na het lezen van de verklaring nog vragen hebben of antwoorden die u niet direct kunt terugvinden, dan kunt u steeds contact opnemen via:{" "}
+            <a className="text-darkorange" href="mailto:info@qastan.be">
+              info@qastan.be
+            </a>
+            .
+          </p>
         </div>
       </div>
     </>

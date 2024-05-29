@@ -37,7 +37,7 @@ function Card() {
     <section className="container mx-auto mb-10">
       <div className="hidden xl:flex gap-2 flex-wrap justify-around">
         {oplossingenData.map((oplossing) => (
-          <div key={oplossing.id} className="relative rounded-xl bg-darkblue overflow-hidden w-72 h-72 group bg-darkblue shadow-lg shadow-darkblue/50 text-gray-700">
+          <div key={oplossing.id} className="relative rounded-xl bg-darkblue overflow-hidden w-72 h-72 group bg-darkblue drop-shadow-lg drop-shadow-darkblue/50 text-gray-700">
             <div className="relative w-full h-96">
               <img src={oplossing.imageSrc} alt={oplossing.altText} className="opacity-85" />
             </div>
@@ -67,7 +67,7 @@ function Card() {
         >
           {oplossingenData.map((oplossing) => (
             <SwiperSlide key={oplossing.id}>
-              <div className="relative rounded-xl bg-darkblue overflow-hidden w-72 h-72 group bg-darkblue shadow-lg shadow-darkblue/50 text-gray-700 mx-auto">
+              <div className="relative rounded-xl bg-darkblue overflow-hidden w-72 h-72 group bg-darkblue drop-shadow-lg drop-shadow-darkblue/50 text-gray-700 mx-auto">
                 <div className="relative w-full h-96">
                   <img src={oplossing.imageSrc} alt={oplossing.altText} className="opacity-85" />
                 </div>

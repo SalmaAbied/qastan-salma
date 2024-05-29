@@ -11,7 +11,7 @@ const solutions = [
       { href: "/Toepassingen", text: "Praktische voorbeelden", bg: "bg-darkorange", textColor: "text-white" },
       { href: "/Digitaliseren", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
     ],
-    shadow: "shadow-darkblue/50",
+    shadow: "drop-shadow-darkblue/50",
   },
   {
     title: "Automatiseren",
@@ -22,7 +22,7 @@ const solutions = [
       { href: "/Toepassingen", text: "Praktische voorbeelden", bg: "bg-darkorange", textColor: "text-white" },
       { href: "/Automatiseren", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
     ],
-    shadow: "shadow-blue-300/50",
+    shadow: "drop-shadow-blue-300/50",
   },
   {
     title: "Plannen",
@@ -33,7 +33,7 @@ const solutions = [
       { href: "/Toepassingen", text: "Praktische voorbeelden", bg: "bg-darkorange", textColor: "text-white" },
       { href: "/Plannen", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
     ],
-    shadow: "shadow-darkblue/50",
+    shadow: "drop-shadow-darkblue/50",
   },
   {
     title: "IT-beheer",
@@ -44,7 +44,7 @@ const solutions = [
       { href: "/Toepassingen", text: "Praktische voorbeelden", bg: "bg-darkorange", textColor: "text-white" },
       { href: "/IT", text: "Meer info", bg: "bg-bggray", textColor: "text-black" },
     ],
-    shadow: "shadow-blue-300/50",
+    shadow: "drop-shadow-blue-300/50",
   },
 ];
 
@@ -52,22 +52,23 @@ function Grid() {
   return (
     <div className="container mx-auto pt-20 px-2 sm:px-6 lg:px-8">
       <div>
-        <h1 className="text-4xl font-bold text-gray-800 pl-5">Ontdek onze oplossingen</h1>
-        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
+        {/* <h1 className="text-4xl font-bold text-gray-800 pl-5">Ontdek onze oplossingen</h1>
+        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" /> */}
+        <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900 mb-10">Ontdek onze oplossingen</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 mt-2">
         {solutions.map((solution, index) => (
           <React.Fragment key={index}>
             {index % 2 === 0 ? (
               <>
-                <div className={`relative bg-darkblue text-white p-6 hidden md:block rounded-lg md:row-span-2 flex items-center justify-center shadow-lg ${solution.shadow}`}>
+                <div className={`relative bg-darkblue text-white p-6 hidden md:block rounded-lg md:row-span-2 flex items-center justify-center drop-shadow-lg ${solution.shadow}`}>
                   <div className="absolute inset-0 bg-cover bg-center rounded-lg " style={{ backgroundImage: `url(${solution.bgImage})`, filter: "brightness(50%)" }}></div>
                 </div>
-                <div className={`bg-bggray p-6 rounded-t-lg md:rounded-lg shadow-lg ${solution.shadow}`}>
+                <div className={`bg-bggray p-6 rounded-t-lg md:rounded-lg drop-shadow-lg ${solution.shadow}`}>
                   <h1 className="text-3xl font-bold">{solution.title}</h1>
                   <p className="mb-5 text-black">{solution.description}</p>
                 </div>
-                <div className={`bg-darkblue p-6 mb-8 md:mb-0 rounded-b-lg md:rounded-lg shadow-lg ${solution.shadow}`}>
+                <div className={`bg-darkblue p-6 mb-8 md:mb-0 rounded-b-lg md:rounded-lg drop-shadow-lg ${solution.shadow}`}>
                   <ul className="space-y-3 text-white">
                     {solution.points.map((point, idx) => (
                       <li className="flex items-center" key={idx}>
@@ -86,14 +87,14 @@ function Grid() {
               </>
             ) : (
               <>
-                <div className={`bg-bggray p-6 rounded-t-lg md:rounded-lg shadow-lg ${solution.shadow}`}>
+                <div className={`bg-bggray p-6 rounded-t-lg md:rounded-lg drop-shadow-lg ${solution.shadow}`}>
                   <h1 className="text-3xl font-bold">{solution.title}</h1>
                   <p className="mb-5 text-black">{solution.description}</p>
                 </div>
-                <div className={`relative bg-darkblue text-white p-6 hidden md:block rounded-lg md:row-span-2 flex items-center justify-center shadow-lg ${solution.shadow}`}>
+                <div className={`relative bg-darkblue text-white p-6 hidden md:block rounded-lg md:row-span-2 flex items-center justify-center drop-shadow-lg ${solution.shadow}`}>
                   <div className="absolute inset-0 bg-cover bg-center rounded-lg" style={{ backgroundImage: `url(${solution.bgImage})`, filter: "brightness(50%)" }}></div>
                 </div>
-                <div className={`bg-darkblue p-6 mb-8 md:mb-0 rounded-b-lg md:rounded-lg shadow-lg ${solution.shadow}`}>
+                <div className={`bg-darkblue p-6 mb-8 md:mb-0 rounded-b-lg md:rounded-lg drop-shadow-lg ${solution.shadow}`}>
                   <ul className="space-y-3 text-white">
                     {solution.points.map((point, idx) => (
                       <li className="flex items-center" key={idx}>
