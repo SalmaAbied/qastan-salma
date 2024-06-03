@@ -3,7 +3,7 @@ import React from "react";
 function TextOnBg() {
   return (
     <>
-      <div className="container mx-auto bg-white drop-shadow-lg rounded-lg my-10 py-20">
+      <div className="container mx-auto bg-white shadow-lg rounded-lg my-10 py-20">
         <div className="mx-10">
           <h1 className="text-9xl font-bold">Cookies &amp; Privacy</h1>
           <h2 className="text-4xl mt-20 font-bold">Privacyverklaring</h2>

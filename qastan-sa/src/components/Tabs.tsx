@@ -36,7 +36,7 @@ const Tabs: React.FC = () => {
             IT-beheer
           </Tab>
         </nav>
-        <main className="w-full text-black max-w-4xl sm:p-10 pt-2 sm:pt-4 overflow-hidden bg-slate-50 p-6 sm:p-10 sm:py-12 drop-shadow-lg drop-shadow-darkblue/50 w-full overflow-hidden rounded-xl duration-500 text-xl space-y-4">
+        <main className="w-full text-black max-w-4xl sm:p-10 pt-2 sm:pt-4 overflow-hidden bg-slate-50 p-6 sm:p-10 sm:py-12 shadow-lg shadow-darkblue/50 w-full overflow-hidden rounded-xl duration-500 text-xl space-y-4">
           {activeTab === "option-1" && <DigitaliseringTab animationData={digitaliserenAnimation} />}
           {activeTab === "option-2" && <AutomatiseringTab animationData={automatiserenAnimation} />}
           {activeTab === "option-3" && <PlannenTab animationData={plannenAnimation} />}
@@ -50,7 +50,7 @@ const Tabs: React.FC = () => {
 const Tab: React.FC<TabProps> = ({ tabId, activeTab, onClick, children }) => {
   const isActive = tabId === activeTab;
   return (
-    <div id={`${tabId}-nav`} className={`px-3 py-1 rounded-b-lg sm:rounded-b-none rounded-t-lg text-center cursor-pointer transition duration-300 hover:bg-slate-50 hover:drop-shadow-lg hover:drop-shadow-darkblue/50 ${isActive ? "bg-slate-50 drop-shadow-lg drop-shadow-darkblue/50 text-black" : ""}`} onClick={() => onClick(tabId)}>
+    <div id={`${tabId}-nav`} className={`px-3 py-1 rounded-b-lg sm:rounded-b-none rounded-t-lg text-center cursor-pointer transition duration-300 hover:bg-slate-50 hover:shadow-lg hover:shadow-darkblue/50 ${isActive ? "bg-slate-50 shadow-lg shadow-darkblue/50 text-black" : ""}`} onClick={() => onClick(tabId)}>
       {children}
     </div>
   );

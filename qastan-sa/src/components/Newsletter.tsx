@@ -3,7 +3,7 @@ import React from "react";
 const SubscribeToNewsletter = () => {
   return (
     <div className="relative flex flex-col items-center justify-center overflow-hidden p-8">
-      <div className="w-full max-w-4xl rounded-lg drop-shadow-lg bg-slate-50 p-14">
+      <div className="w-full max-w-4xl rounded-lg shadow-lg bg-slate-50 p-14">
         <div className="flex flex-col items-center">
           <span className="rounded-lg bg-lightblue py-px px-2 text-sm text-blue-800">Maandelijkse nieuwsbrief</span>
           <h3 className="mt-2 max-w-2xl text-center text-2xl font-bold leading-tight sm:text-3xl md:text-4xl md:leading-tight">Blijf op de hoogte door je in te schrijven voor onze nieuwsbrief</h3>

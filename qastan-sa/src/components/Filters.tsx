@@ -5,7 +5,7 @@ interface CardWImageProps {
   cardWImageData: CardProps[];
   tags: string[];
   title: string;
-  detailPageRoute: string; // Toevoeging van de prop voor de detailpagina route
+  detailPageRoute: string;
 }
 
 const tagColors: { [key: string]: string } = {
@@ -28,11 +28,11 @@ const textColors: { [key: string]: string } = {
 
 const FilterButton: React.FC<{ tag: string; selectedTags: string[]; toggleTag: (tag: string) => void }> = ({ tag, selectedTags, toggleTag }) => {
   const isSelected = selectedTags.includes(tag);
-  const bgColor = isSelected ? "bg-darkorange drop-shadow-lg drop-shadow-black/50" : tagColors[tag];
+  const bgColor = isSelected ? "bg-darkorange shadow-lg shadow-black/50" : tagColors[tag];
   const textColor = isSelected ? "text-white" : textColors[tag];
 
   return (
-    <button className={`rounded-full px-4 py-2 font-semibold drop-shadow-lg drop-shadow-blue-200/50 hover:brightness-75 transition duration-500 text-xs mr-2 mb-2 ${bgColor} ${textColor}`} onClick={() => toggleTag(tag)}>
+    <button className={`rounded-full px-4 py-2 font-semibold shadow-lg shadow-blue-200/50 hover:brightness-75 transition duration-500 text-xs mr-2 mb-2 ${bgColor} ${textColor}`} onClick={() => toggleTag(tag)}>
       {tag}
     </button>
   );
@@ -47,7 +47,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
     setCurrentPage(1);
   };
 
-  const cardsPerPage = 8;
+  const cardsPerPage = 6;
   const filteredCardWImageData = selectedTags.length === 0 ? cardWImageData : cardWImageData.filter((card) => card.tags.some((tag) => selectedTags.includes(tag)));
   const totalPages = Math.ceil(filteredCardWImageData.length / cardsPerPage);
   const currentCards = filteredCardWImageData.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage);
@@ -71,7 +71,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
         </div>
         <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 container mx-auto">
           {currentCards.map((card) => (
-            <div key={card.id} className="bg-slate-50 drop-shadow-lg drop-shadow-darkblue/50 rounded-lg drop-shadow-lg mb-8 flex flex-col">
+            <div key={card.id} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-lg shadow-lg mb-8 flex flex-col">
               <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
                 <img src={card.imageUrl} alt={card.title} className="lg:h-96 2xl:h-fit object-cover" />
               </div>

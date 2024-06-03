@@ -33,7 +33,7 @@ const CardWImage: React.FC = () => {
         </div>
         <div className="flex flex-wrap container mx-auto justify-around xxl:w-3/4">
           {cardData.map((card, index) => (
-            <div key={index} className="bg-darkblue drop-shadow-lg drop-shadow-darkblue/50 rounded-xl drop-shadow-lg md:ml-5 lg:ml-0 w-3/4 sm:w-min mb-8 flex flex-col">
+            <div key={index} className="bg-darkblue shadow-lg shadow-darkblue/50 rounded-xl shadow-lg md:ml-5 lg:ml-0 w-3/4 sm:w-min mb-8 flex flex-col">
               <div className="sm:w-96 sm:h-96 overflow-hidden flex items-center rounded-t-xl">
                 <img src={card.imageUrl} alt={card.title} />
               </div>

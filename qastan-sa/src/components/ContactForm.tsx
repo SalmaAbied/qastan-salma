@@ -10,7 +10,7 @@ const ContactSection = () => {
         <p className="text-sm md:text-lg">Neem vandaag nog contact op met ons en wij zullen u zo snel mogelijk helpen</p>
       </div>
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 h-fit w-4/5 md:w-[90%] lg:w-4/5 rounded-lg drop-shadow-lg overflow-hidden text-white">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 h-fit w-4/5 md:w-[90%] lg:w-4/5 rounded-lg shadow-lg overflow-hidden text-white">
         <div className="p-2 md:p-4 h-full bg-darkblue col-span-2 z-40">
           <form>
             <div className="flex flex-col md:flex-row pt-8 p-4">

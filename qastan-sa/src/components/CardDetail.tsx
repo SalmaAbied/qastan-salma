@@ -11,8 +11,8 @@ const CardDetail: React.FC<{ cardData: CardProps[] }> = ({ cardData }) => {
     <>
       <div className="container mx-auto md:py-10 grid grid-cols-1 px-4  md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
         {cardData.map((card, index) => (
-          <div key={index} className="relative py-4 flex flex-col mt-6 text-gray-700 bg-white drop-shadow-md bg-clip-border rounded-xl ">
-            <div className="relative h-80 mx-4 -mt-6 overflow-hidden text-white drop-shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 drop-shadow-blue-gray-500/40">
+          <div key={index} className="relative py-4 flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl ">
+            <div className="relative h-80 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
               <img src={card.imageUrl} alt="card-image" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">

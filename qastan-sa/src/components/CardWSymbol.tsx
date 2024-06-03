@@ -56,7 +56,7 @@ function CardWSymbol({ title, description, icon, button, className, tag }: CardW
   };
 
   return (
-    <div className={`mx-10 md:mx-0 rounded-xl ${className} bg-slate-50 drop-shadow-lg drop-shadow-lightgray/50 p-6 flex flex-col justify-between`}>
+    <div className={`mx-10 md:mx-0 rounded-xl ${className} bg-slate-50 shadow-lg shadow-lightgray/50 p-6 flex flex-col justify-between`}>
       <div>
         {tag && <span className="rounded-lg bg-orange-200 py-px px-2 text-sm text-orange-900 w-fit">{tag}</span>}
         <div className="flex items-center mb-4">
