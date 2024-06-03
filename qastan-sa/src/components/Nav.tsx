@@ -79,7 +79,7 @@ const Nav: React.FC = () => {
               </div>
             </li>
             <li>
-              <Link to="/Toepassingen" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Toepassingen" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
+              <Link to="/Toepassingen" className={`lg:ml-6 font-medium text-lg ${location.pathname.includes("/Toepassingen") ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Toepassingen
               </Link>
             </li>
@@ -94,7 +94,7 @@ const Nav: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Blog" className={`lg:ml-6 font-medium text-lg ${location.pathname === "/Blog" ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
+              <Link to="/Blog" className={`lg:ml-6 font-medium text-lg ${location.pathname.includes("/Blog") ? "text-darkorange" : "text-white"} hover:text-darkorange transition duration-300`} onClick={handleLinkClick}>
                 Blog
               </Link>
             </li>

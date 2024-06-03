@@ -7,11 +7,13 @@ interface TabProps {
 
 // cards with image (toepassingen)
 interface CardProps {
+  id: string; 
   imageUrl: string;
-  tags: string[];
   title: string;
   description: string;
+  tags: string[];
 }
+
 // Hero op detail page
 interface HeroWTextProps {
   badgeText: string;

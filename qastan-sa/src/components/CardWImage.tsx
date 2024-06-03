@@ -2,18 +2,21 @@ import React from "react";
 
 const cardData: CardProps[] = [
   {
+    id: "1",
     imageUrl: "https://www.qastan.be/swfiles/files/documenten-centraliseren.jpeg",
     tags: ["FITdoc"],
     title: "Bestanden centraliseren",
     description: "Nooit meer op zoek naar dossiers of documenten. Verzamel al je informatie op één centrale plek.",
   },
   {
+    id: "2",
     imageUrl: "https://www.qastan.be/swfiles/files/Cyberawarenesstraining-ITpartner.png",
     tags: ["Veiligheid", "Phising"],
     title: "Cyberveiligheid: awarenesstraining",
     description: "Behoed jouw bedrijf op mogelijk cyberaanvallen door alle medewerkers attent te maken op de gevaren van phishing en het belang van een veilig werkomgeving.",
   },
   {
+    id: "3",
     imageUrl: "https://www.qastan.be/swfiles/files/itsupport.jpeg",
     tags: ["IT"],
     title: "Eén aanspreekpunt voor jouw volledige IT",
@@ -26,8 +29,6 @@ const CardWImage: React.FC = () => {
     <>
       <div className="pb-20">
         <div className="container mx-auto pt-56 md:pt-5 pb-10">
-          {/* <h1 className="pl-5 text-4xl">Ontdek onze toepassingen</h1>
-          <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" /> */}
           <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Ontdek onze toepassingen</h2>
         </div>
         <div className="flex flex-wrap container mx-auto justify-around xxl:w-3/4">

@@ -1,0 +1,26 @@
+[
+    {
+      "id": "1",
+      "imageUrl": "https://images.unsplash.com/photo-1587384474964-3a06ce1ce699?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Excelsior",
+      "description": "Onze eigen zaalvoetbalploeg voor de Ronaldo’s en Messi’s onder ons. Aangevuurd door onze kapitein Thomas, maken we van fair-play een erezaak."
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://www.qastan.be/swfiles/files/unsplash_pMLf5_j-2_Y-mob.jpg?nc=1708953614",
+      "title": "Gaming",
+      "description": "Geen IT’ers zonder een eigen portie gaming. Of het nu ‘Halo’, een FIFAtornooi op de Xbox of strategisch samenzweren in ‘Among Us’ is, once a nerd, always a nerd."
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://images.unsplash.com/photo-1610723112396-868baffc3843?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Kicker",
+      "description": "‘Met band’, het ‘tikske’ of via ‘trick shot’, wekelijks strijden onze puffins in 2 competities (Pro League vs. Amateurs) om de felbegeerde beker én bijhorende bicky burger."
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://images.unsplash.com/photo-1619812787348-033587e6f8a2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Friday drink",
+      "description": "Op vrijdag kaarten we even na. Gekoelde drankjes of een goeie kop koffie en thee zijn sowieso een must op werkdagen, maar vrijdagmiddag mag het net iets meer zijn …"
+    }
+  ]

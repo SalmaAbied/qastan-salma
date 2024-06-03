@@ -5,6 +5,7 @@ interface CardWImageProps {
   cardWImageData: CardProps[];
   tags: string[];
   title: string;
+  detailPageRoute: string; // Toevoeging van de prop voor de detailpagina route
 }
 
 const tagColors: { [key: string]: string } = {
@@ -37,7 +38,7 @@ const FilterButton: React.FC<{ tag: string; selectedTags: string[]; toggleTag: (
   );
 };
 
-const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) => {
+const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, detailPageRoute }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
@@ -60,8 +61,6 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
     <>
       <div className="pb-20">
         <div className="container mx-auto pt-56 md:pt-5 pb-10">
-          {/* <h1 className="pl-5 text-4xl">{title}</h1>
-          <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" /> */}
           <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900 my-10">{title}</h2>
           <div>
             <h2 className="text-2xl font-semibold mb-4">Filters</h2>
@@ -71,8 +70,8 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
           </div>
         </div>
         <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 container mx-auto">
-          {currentCards.map((card, index) => (
-            <div key={index} className="bg-slate-50 drop-shadow-lg drop-shadow-darkblue/50 rounded-lg drop-shadow-lg mb-8 flex flex-col">
+          {currentCards.map((card) => (
+            <div key={card.id} className="bg-slate-50 drop-shadow-lg drop-shadow-darkblue/50 rounded-lg drop-shadow-lg mb-8 flex flex-col">
               <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
                 <img src={card.imageUrl} alt={card.title} className="lg:h-96 2xl:h-fit object-cover" />
               </div>
@@ -90,7 +89,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title }) 
                 </div>
               </div>
               <div className="mt-auto justify-end p-4">
-                <Link to={`/detail/${card.title}`} className="rounded-full block h-10 flex items-center w-fit md:mt-0 mt-2 font-medium text-white bg-darkorange px-5 py-2 hover:bg-lightblue hover:text-white transition duration-300">
+                <Link to={`${detailPageRoute}/${card.id}`} className="rounded-full block h-10 flex items-center w-fit md:mt-0 mt-2 font-medium text-white bg-darkorange px-5 py-2 hover:bg-lightblue hover:text-white transition duration-300">
                   Meer informatie
                 </Link>
               </div>
