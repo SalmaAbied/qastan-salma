@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const cardData: CardProps[] = [
   {
@@ -25,11 +26,20 @@ const cardData: CardProps[] = [
 ];
 
 const CardWImage: React.FC = () => {
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="pb-20">
-        <div className="container mx-auto pt-56 md:pt-5 pb-10">
+        <div className="container mx-auto pt-56 md:pt-5 pb-10 flex justify-between">
           <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Ontdek onze toepassingen</h2>
+          <span onClick={handleClick}>
+            <Link to="/Toepassingen" className="text-darkblue hover:text-lightblue transition duration-300 font-medium">
+              Ontdek al onze toepassingen
+            </Link>
+          </span>
         </div>
         <div className="flex flex-wrap container mx-auto justify-around xxl:w-3/4">
           {cardData.map((card, index) => (

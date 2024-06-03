@@ -56,3 +56,11 @@ interface Event {
   year: string;
   title: string;
 }
+
+// cardWImage
+interface CardWImageProps {
+  cardWImageData: CardProps[];
+  tags: string[];
+  title: string;
+  detailPageRoute: string;
+}

@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-interface CardWImageProps {
-  cardWImageData: CardProps[];
-  tags: string[];
-  title: string;
-  detailPageRoute: string;
-}
-
 const tagColors: { [key: string]: string } = {
   digitaliseren: "bg-lightblue",
   automatiseren: "bg-bggray",
@@ -61,21 +54,15 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
 
   return (
     <>
-      <div className="pb-20">
-        <div className="container mx-auto pt-56 md:pt-5 pb-10">
+      <div className="pb-20 px-4">
+        <div className="container mx-auto lg:pt-56 md:pt-5 pb-10">
           <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900 my-10">{title}</h2>
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Filters</h2>
-            {tags.map((tag) => (
-              <FilterButton key={tag} tag={tag} selectedTags={selectedTags} toggleTag={toggleTag} />
-            ))}
-          </div>
         </div>
         <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 container mx-auto">
           {currentCards.map((card) => (
             <div key={card.id} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-lg shadow-lg mb-8 flex flex-col">
               <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
-                <img src={card.imageUrl} alt={card.title} className="lg:h-96 2xl:h-fit object-cover" />
+                <img src={card.imageUrl} alt={card.title} className="object-cover" />
               </div>
               <div className="overflow-hidden relative flex-grow px-4">
                 <ul className="list-none my-5 flex">
@@ -97,19 +84,6 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
               </div>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center mt-8">
-          <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} className="px-4 py-2 mx-2 rounded-full text-black font-semibold hover:text-darkorange transition duration-300">
-            Vorige
-          </button>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button key={index} onClick={() => handlePageChange(index + 1)} className={`px-4 py-2 mx-2 rounded-full ${currentPage === index + 1 ? "font-black text-darkorange" : "font-medium"} text-black font-semibold hover:text-darkorange transition duration-300`}>
-              {index + 1}
-            </button>
-          ))}
-          <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} className="px-4 py-2 mx-2 rounded-full text-black font-semibold hover:text-darkorange transition duration-300">
-            Volgende
-          </button>
         </div>
       </div>
     </>
