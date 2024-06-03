@@ -21,7 +21,7 @@ const cardWImageData = [
   },
   {
     id: "3",
-    imageUrl: "https://www.qastan.be/swfiles/files/Ontwikkeling-op-AS400-720x340-tab.jpeg",
+    imageUrl: "https://www.qastan.be/swfiles/files/Ontwikkeling-op-AS400.jpeg?nc=1708807790",
     tags: ["automatiseren"],
     bgtag: "bggray",
     title: "De toekomst van bedrijfs-automatisering: AS/400 blijft betrouwbaar in een digitale wereld",

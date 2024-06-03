@@ -28,25 +28,32 @@
   },
   {
     "id": "2",
-    "imageUrl": "https://www.qastan.be/swfiles/files/sterk-wachtwoord-maken.jpeg",
+    "imageUrl": "https://www.qastan.be/swfiles/files/sterke-wachtwoorden.jpeg?nc=1708807793",
     "tags": [
       "IT-infrastructuur"
     ],
     "bgtag": "darkblue",
     "title": "Hoe sterk is jouw wachtwoord?",
-    "description": "Sterke wachtwoorden. Hoeveel tijd zou er nodig zijn om jouw wachtwoord te achterhalen? Doe de test.",
+    "description": "Een sterk wachtwoord is noodzakelijk. We zondigen ons echter allemaal wel eens aan een snel en vooral gemakkelijk te onthouden wachtwoord. Of misschien heb je wel een sterk wachtwoord voor de belangrijkere zaken en een zwak voor de minder belangrijke. Een ding is zeker, we gebruiken vaak hetzelfde wachtwoord of grijpen snel terug naar een eerder gebruikte wachtwoorden.",
     "date": "3 juni 2024",
     "author": "Arne Debruyne",
     "subtitles": [
-      "hello",
-      "hellosdflkj",
-      "helloo"
+      "Zoeken naar de speld in de veiligheidshooiberg",
+      "Doe de test"
     ],
     "content": [
-      "ioren",
-      "lhdksjnc",
-      "dhiosf"
-    ]
+      "Elk wachtwoord wordt vroeg of laat achterhaald. Een wachtwoord achterhalen is als zoeken naar een speld in de hooiberg. Hoe groot die hooiberg is, dat kies je als gebruiker zelf. We maken het de hacker dan ook liefst zo moeilijk mogelijk en laten hem zo lang mogelijk zoeken in de hooiberg.",
+      "Mocht je toch nog even willen testen hoelang het zou duren voor jouw wachtwoord uit de hooiberg gehaald wordt? Via https://www.grc.com/haystack.htm achterhaal je meteen hoe groot jouw eigen hooiberg is."
+    ],
+    "tipsTitle": "Hoe kunnen we de hooiberg groter maken?",
+    "tips": [
+      "Gebruik kleine letters en hoofdletters door elkaar",
+      "Gebruik cijfers en wees creatief: een olifant kan bijvoorbeeld ook 0lifant zijn",
+      "Verwerk speciale tekens: ! \" # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ] ^ _` { | } ~",
+      "Kies minstens 8 karakters, langer is beter",
+      "Er is niets mis met een zinnetje of kinderrijmpje als wachtwoord. In het vakjargon, een passphrase genoemd: Ikheb3kinderen&eenleukeh0nd! is makkelijk te onthouden en tegelijk een zéér sterk wachtwoord."
+    ],
+    "note": "Niet meteen inspiratie? Maak gebruik van een zogenaamde Password Generator die willekeurige woorden aan elkaar kan verbinden en een volledig willekeurig wachtwoord kan creëren. Een voorbeeldje hiervan: https://qpg.qastan.be/"
   },
   {
     "id": "3",
@@ -58,16 +65,18 @@
     "title": "De toekomst van bedrijfs-automatisering: AS/400 blijft betrouwbaar in een digitale wereld",
     "description": "Wat is AS/400?AS/400, ook wel bekend als IBM iSeries, is een reeks van computersystemen die geïntroduceerd werden door IBM in de late jaren ’80.",
     "date": "3 juni 2024",
-    "author": "Arne Debruyne",
+    "author": "Admin",
     "subtitles": [
-      "hello",
-      "hellosdflkj",
-      "helloo"
+      "Wat is AS/400?",
+      "Heeft AS/400 nog een toekomst?",
+      "Softwareontwikkeling voor AS/400",
+      "AS/400 Expertise: een solide basis om verder te bouwen"
     ],
     "content": [
-      "ioren",
-      "lhdksjnc",
-      "dhiosf"
+      "AS/400, ook wel bekend als IBM iSeries, is een reeks van computersystemen die geïntroduceerd werden door IBM in de late jaren ’80. Omwille van hun duurzaamheid en betrouwbaarheid werd AS/400 in de jaren daaropvolgend veelvuldig geïntroduceerd bij verschillende ondernemingen. Ook het karakteristieke ‘groene scherm’ (inclusief sneltoetsen) deden de populariteit bij het brede publiek groeien. AS/400 blijkt ook vandaag nog steeds een solide en betrouwbaar systeem mét toekomst.",
+      "Hoewel de naam AS/400 doet vermoeden dat het om een ouder systeem gaat die niet meer aan de huidige technologische en functionele eisen van een moderne bedrijfsvoering voldoet, is niets minder waar. Op vandaag voert IBM nog steeds updates uit voor dit platform dat een zeer trouwe gebruikersbasis heeft. Tal van (grote) bedrijven en ondernemingen maken nog steeds gebruik van AS/400 vanwege de stabiliteit en lange levensduur van het systeem. Vooral voor bedrijfskritieke toepassingen zoals financiën, logistiek en productie wordt nog steeds beroep gedaan AS/400.",
+      "AS/400 softwareontwikkeling biedt een unieke reeks voordelen voor bedrijven die streven naar betrouwbaarheid, beveiliging en schaalbaarheid in hun IT-oplossingen. Met tal van programmeertalen en een gediversifieerd ecosysteem blijft AS/400 een waardevol platform voor softwareontwikkelaars. Net als bij andere omgevingen, is het immers mogelijk om diverse integraties te maken op de AS/400 ERP-systemen. Bij het ontwikkelen van software voor AS/400 is een breed scala aan programmeertalen mogelijk. Naast de klassiekers als RPG/ILE-RPG, Cobol, Java,… is Windev een heel goede 5GL-tool waarmee op een heel snelle manier bestaande toepassingen gemoderniseerd worden en kunnen re-engineering van bestaande software worden uitgevoerd. En dat allemaal met dezelfde snelheid, betrouwbaarheid en stabiliteit die we kennen van de ‘klassieke’ programmeertalen. Daarnaast kan ook de look-and-feel (interface) van het befaamde ‘groene scherm’ aangepast worden. Er zijn immers diverse mogelijkheden om AS/400 te moderniseren en aan te passen aan de huidige moderne bedrijfsvoering.",
+      "Gezien het groot aantal ondernemingen die nog steeds beroep doen op AS/400, biedt Qastan op dit terrein haar ondersteuning aan. Vanuit de eigen klantenbasis en jarenlange ervaring bouwde Qastan immers een stevige expertise op bij het opzetten, ondersteunen en moderniseren van de AS/400 ERP-en integratiesystemen. Een van de klanten die hierbij ondersteund wordt, is de groothandel Lecot. Met meer dan 700 medewerkers, verdeeld over 74 vestigingen, is stabiliteit één van de hoekstenen van het IT-beleid. Diverse softwaretoepassingen (onder meer document management en personeelsplanning) en het volledige digitaliseringsluik maken gebruik of zijn geïntegreerd met AS/400. Hoewel de IBM iSeries hier de basis vormt, zijn groene schermen hier niet te vinden. Een moderne en hedendaagse interface werd ontworpen voor de diverse digitalisering en planningstools. Ook nood aan specifieke AS/400 Expertise? Contacteer onze experten vandaag nog."
     ]
   },
   {
@@ -78,19 +87,29 @@
     ],
     "bgtag": "bggray",
     "title": "De kracht van Power Apps: snel en kostenefficiënt digitaliseren",
-    "description": "Op maat gemaakte (mobiele) apps ontwikkelen, betekende tot voor kort de start van een ellenlang ontwikkelingstraject.",
+    "description": "Op maat gemaakte (mobiele) apps ontwikkelen, betekende tot voor kort de start van een ellenlang ontwikkelingstraject. Microsoft Power Apps, als onderdeel van Microsoft 365, biedt organisaties de mogelijkheid om krachtige toepassingen te bouwen in een mum van tijd. En als we snel bedoelen, dan bedoelen echt snel. Een app is reeds mogelijk binnen één enkele dag. In dit artikel duiken we dieper in op de mogelijkheden en voordelen van Power Apps en laten we zien hoe dit platform bij Qastan en klanten wordt ingezet om snel innovatieve oplossingen te creëren. Lees verder om te ontdekken hoe Power Apps uw bedrijf kan helpen om sneller, flexibeler en kosteneffectiever te groeien.",
     "date": "3 juni 2024",
-    "author": "Arne Debruyne",
+    "author": "Admin",
     "subtitles": [
-      "hello",
-      "hellosdflkj",
-      "helloo"
+      "Eenvoudige apps voor complexe processen",
+      "App op maat",
+      "Hoe gaan we bij Qastan te werk?"
     ],
     "content": [
-      "ioren",
-      "lhdksjnc",
-      "dhiosf"
-    ]
+      "Power Apps is integraal onderdeel van Microsoft 365 en biedt de mogelijkheid om snel digitale oplossingen te voorzien voor tal van uitdagingen binnen de bedrijfsvoering. Via Power Apps vertalen we complexere of administratieve processen naar concrete oplossingen. Denk aan het reduceren van repetitieve handelingen, het uitsturen van herinneringen en notificaties of de optimalisatie van bepaalde flows/processen. Hierbij focussen we ons in de eerste plaats op echte ‘quick wins’ die een meerwaarde creëren binnen de organisatie.",
+      "Een Power App bouw je volledig op maat van jouw eigen organisatie. Bouw de app als losstaande toepassing of leg de nodige connecties naar de database naar keuze. Vult het EPR-pakket niet alle noden in of heb je nood aan meer visualisatie? Power Apps kan in vele gevallen een oplossing bieden op maat van elke organisatie. Bovendien volgt ook de look-and-feel van de app de huisstijl die je zelf wenst.",
+      "Bij Qastan staan we onze klanten bij van A tot Z in de ontwikkeling van een budgetvriendelijke Power App. Wanneer het idee scherp gesteld is, gaan we meteen aan de slag. Een van onze analisten schrijft alle vereisten – ter plaatse of via een teams-call – uit. Tegelijk worden de nodige mock-ups opgemaakt zodat je perfect weet hoe de app er precies zal uitzien en deze in de praktijk kan werken. Dit vormt meteen ook de start van het ontwikkelingsproces. Gezien een Power App in een low-code omgeving geschreven wordt, werken we onmiddellijk naar een resultaat toe. Na een testfase, zetten we de spreekwoordelijke puntjes op de i om de finale app af te leveren. Na een korte opleiding kan je meteen aan de slag.Ook mee(r) en budgetvriendelijk digitaliseren via Power Apps? Je hebt een idee waarmee  we aan de slag kunnen gaan? Vraag vandaag nog een offerte aan. Dan bekijken we met veel plezier hoe we samen jouw automatisering verder kunnen aansturen."
+    ],
+    "tipsTitle": "Waarvoor kunnen Microsoft Power Apps gebruikt worden? Voorbeelden van Power Apps:",
+    "tips": [
+      "Kwaliteitscontroles (QMS app)",
+      "Applicatie op werven of interventies",
+      "Shipment",
+      "Administratieve of boekhoudkundige toepassingen: verwerken van bonnetjes en rekeningen",
+      "Scanapplicaties voor PDA’s of magazijn (WMS app)",
+      "Takenlijstjes en automatische notificaties uitsturen"
+    ],
+    "note": "Een van de meest opvallende voordelen van Microsoft Power Apps is de snelheid waarmee de applicatie kan ontwikkeld worden. Omdat Power Apps een ‘no-code/low-code’ platform is, is geen uitgebreid ontwikkelingsteam nodig om snel resultaten neer te zetten. Hierdoor wordt de ontwikkelingstijd verminderd waardoor we sneller en vooral kostefficiëntere applicaties bouwen. Bovendien is er ook geen licentiekost verbonden aan de applicatie. De licentie zit immers reeds in jouw Microsoft 365-licentie. De kostprijs om een Power App te ontwikkelen ligt dan ook gemakkelijk 70% lager dan bij het bouwen van een andere app. Een Power App integreert makkelijk met andere Microsoft-producten zoals Sharepoint, Teams, Power BI, Excel of Dynamics. Hierdoor kunt u moeiteloos gegevens delen en synchroniseren tussen verschillende applicaties. Bovendien is de toepassing meteen beschikbaar in de browser (online), mobiel op de smartphone of tablet."
   },
   {
     "id": "5",

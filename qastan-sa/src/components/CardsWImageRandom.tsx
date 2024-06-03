@@ -55,7 +55,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
   return (
     <>
       <div className="pb-20 px-4">
-        <div className="container mx-auto lg:pt-56 md:pt-5 pb-10">
+        <div className="container mx-auto md:pt-5 pb-10">
           <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900 my-10">{title}</h2>
         </div>
         <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 container mx-auto">

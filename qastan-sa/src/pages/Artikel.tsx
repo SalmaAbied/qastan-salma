@@ -3,12 +3,26 @@ import { useParams, Link } from "react-router-dom";
 import blogData from "../json/blogData.json";
 import bg from "../img/cirkel.png";
 
+const parseLinks = (text: string) => {
+  const urlRegex = /(\bhttps?:\/\/[^\s]+)/g;
+  return text.split(urlRegex).map((part: string, index: number) =>
+    urlRegex.test(part) ? (
+      <a key={index} href={part} className="text-darkorange font-bold hover:text-lightblue transition duration-300" target="_blank" rel="noopener noreferrer">
+        {part}
+      </a>
+    ) : (
+      part
+    )
+  );
+};
+
 const Artikel: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const post = blogData.find((p: any) => p.id === id);
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   if (!post) {
     return (
       <>
@@ -30,7 +44,7 @@ const Artikel: React.FC = () => {
   return (
     <>
       <div className="container mx-auto px-10 md:pt-20">
-        <Link to="/Blog" className="text-darkblue hover:text-lightblue transition duration-300 mb-8 inline-block">
+        <Link to="/Blog" onClick={handleClick} className="text-darkblue hover:text-lightblue transition duration-300 mb-8 inline-block">
           &larr; Terug naar overzicht
         </Link>
         <h1 className="font-bold text-4xl mb-6">{post.title}</h1>
@@ -48,19 +62,38 @@ const Artikel: React.FC = () => {
             ))
           ) : (
             <div className="w-full px-4 mb-8">
-              <img className="w-full h-96 object-cover rounded-lg shadow-lg" src={post.imageUrl} alt={`image about ${post.title}`} />
+              <img className="w-full h-96 object-cover rounded-lg shadow-lg" src={post.imageUrl} alt={`image about {post.title}`} />
             </div>
           )}
           <div className="w-full md:grid grid-cols-2 gap-6 px-4 mb-8">
-            <p className="text-lg mb-4 leading-relaxed italic">{post.description}</p>
+            <p className="text-lg mb-4 leading-relaxed italic">{parseLinks(post.description)}</p>
             {post.subtitles.map((subtitle: string, index: number) => (
               <div key={index} className="mb-6">
                 <h2 className="font-bold text-xl mb-2">{subtitle}</h2>
-                <p className="text-lg">{post.content[index]}</p>
+                <p className="text-lg">{parseLinks(post.content[index])}</p>
               </div>
             ))}
           </div>
+          
         </div>
+
+        {post.tips && (
+          <div className="w-full mb-8">
+            <h2 className="font-bold text-xl mb-4 md:w-1/2">{post.tipsTitle}</h2>
+            <ul className="list-disc list-inside">
+              {post.tips.map((tip: string, index: number) => (
+                <li key={index} className="px-4 text-lg mb-2 md:w-1/2 leading-7">{tip}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {post.note && (
+          <div className="w-full px-4 mb-8">
+            <p className="text-lg leading-relaxed italic md:w-1/2">{parseLinks(post.note)}</p>
+          </div>
+        )}
+
         <div className="flex justify-center md:pb-20">
           <Link onClick={handleClick} to="/Blog" className="bg-darkblue hover:bg-lightblue py-2 px-4 rounded-full transition duration-300 text-white inline-block">
             Terug naar overzicht
