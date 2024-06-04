@@ -2,7 +2,11 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import blogData from "../json/blogData.json";
 import bg from "../img/cirkel.png";
+import Links from "./SideLinks";
+import ReactPlayer from "react-player";
+import VideoPlayer from "./VideoPlayer";
 
+// link in text omvormen naar link
 const parseLinks = (text: string) => {
   const urlRegex = /(\bhttps?:\/\/[^\s]+)/g;
   return text.split(urlRegex).map((part: string, index) =>
@@ -38,15 +42,6 @@ const Artikel: React.FC = () => {
       </div>
     );
   }
-
-  const otherPosts = blogData.filter((p) => p.id !== id);
-
-  // Shuffle and slice to get 5 random posts
-  const getRandomPosts = (posts: typeof blogData, max: number) => {
-    return posts.sort(() => 0.5 - Math.random()).slice(0, max);
-  };
-
-  const randomPosts = getRandomPosts(otherPosts, 5);
 
   return (
     <>
@@ -88,9 +83,11 @@ const Artikel: React.FC = () => {
                 </div>
               ))}
             </div>
+            {post.videoUrl && <VideoPlayer />}
             {post.tips && (
               <div className="mb-8">
                 <h2 className="font-bold text-xl mb-4">{post.tipsTitle}</h2>
+                <p className="text-lg">{post.tipsDescription}</p>
                 <ul className="list-disc list-inside pl-4">
                   {post.tips.map((tip, index) => (
                     <li key={index} className="text-lg mb-2 leading-7">
@@ -105,26 +102,56 @@ const Artikel: React.FC = () => {
                 <p className="text-lg leading-relaxed italic">{parseLinks(post.note)}</p>
               </div>
             )}
+            {post.tipsTwo && (
+              <div className="mb-8">
+                <h2 className="font-bold text-xl mb-4">{post.tipsTitleTwo}</h2>
+                <p className="text-lg">{post.tipsDescriptionTwo}</p>
+                <ul className="list-disc list-inside pl-4">
+                  {post.tips.map((tip, index) => (
+                    <li key={index} className="text-lg mb-2 leading-7">
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {post.note && (
+              <div className="mb-8">
+                <p className="text-lg leading-relaxed italic">{parseLinks(post.note)}</p>
+              </div>
+            )}
+            {post.noteTwo &&
+              post.noteTwo.map((noteTwo, index) => (
+                <div key={index} className="mb-6">
+                  <p className="text-xl mb-2">{noteTwo}</p>
+                </div>
+              ))}
+            {post.tipsThree && (
+              <div className="mb-8">
+                <h2 className="font-bold text-xl mb-4">{post.tipsTitleThree}</h2>
+                <p className="text-lg">{post.tipsDescriptionThree}</p>
+                <ul className="list-disc list-inside pl-4">
+                  {post.tips.map((tip, index) => (
+                    <li key={index} className="text-lg mb-2 leading-7">
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {post.conslusion && (
+              <div className="mb-8">
+                <h1 className="font-bold text-xl mb-4">{post.conclusionTitle}</h1>
+                <p className="text-lg leading-relaxed italic">{parseLinks(post.conslusion)}</p>
+              </div>
+            )}
             <div className="flex justify-center md:pb-20">
               <Link onClick={handleClick} to="/Blog" className="bg-darkblue hover:bg-lightblue py-2 px-4 rounded-full transition duration-300 text-white inline-block">
                 Terug naar overzicht
               </Link>
             </div>
           </div>
-          <div className="md:col-span-1">
-            <div className="bg-slate-50 p-6 rounded-lg shadow-lg">
-              <h2 className="font-bold text-xl mb-4">Ontdek meer interessante artikelen!</h2>
-              <ul className="list-none pl-0">
-                {randomPosts.map((otherPost) => (
-                  <li key={otherPost.id} className="mb-4">
-                    <Link to={`/Blog/${otherPost.id}`} onClick={handleClick} className="text-darkblue hover:text-lightblue transition duration-300">
-                      {otherPost.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <Links />
         </div>
       </div>
     </>

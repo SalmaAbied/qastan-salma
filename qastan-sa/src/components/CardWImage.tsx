@@ -61,9 +61,9 @@ const CardWImage: React.FC = () => {
                 </div>
               </div>
               <div className="mt-auto justify-end p-4">
-                <a href="#" className="rounded-full block h-10 flex items-center w-fit md:mt-0 mt-2 font-medium text-white bg-darkorange px-5 py-2 hover:bg-lightblue hover:text-white transition duration-300">
+                <Link onClick={handleClick} to={`Toepassingen/${card.id}`} className="rounded-full block h-10 flex items-center w-fit md:mt-0 mt-2 font-medium text-white bg-darkorange px-5 py-2 hover:bg-lightblue hover:text-white transition duration-300">
                   Meer informatie
-                </a>
+                </Link>
               </div>
             </div>
           ))}

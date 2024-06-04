@@ -8,8 +8,8 @@ function Banner() {
         <div className="lg:w-1/2">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">Samen duiken in de digitalisering van jouw onderneming?</h1>
           <p className="text-base md:text-lg lg:text-xl mb-5">We helpen je graag verder na een verkennend gesprek. We luisteren naar jouw noden, stellen een gepaste oplossing voor en laten je bedrijf vliegen!</p>
-          <a href="#" className="bg-darkorange font-medium py-2 px-4 rounded-full hover:bg-lightblue transition duration-300">
-            Ontdek meer
+          <a href="/Contact" className="bg-darkorange font-medium py-2 px-4 rounded-full hover:bg-lightblue transition duration-300">
+            Vraga gesprek aan
           </a>
         </div>
         <div className="mt-8 lg:mt-0 lg:absolute lg:right-12 lg:top-1/2 lg:transform lg:-translate-y-1/2">
