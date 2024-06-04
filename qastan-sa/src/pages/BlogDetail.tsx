@@ -1,6 +1,6 @@
 import React from "react";
 import CardWImage from "../components/CardsWImageRandom";
-import Artikel from "./Artikel";
+import Artikel from "../components/Artikel";
 
 const cardWImageData = [
   {

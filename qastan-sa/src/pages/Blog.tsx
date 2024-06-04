@@ -101,8 +101,9 @@ function Blog() {
       <Background />
       <div className="z-40 relative">
         <HeroWText badgeText="Blog" heading="Onze blog" paragraph="Lees hier alles over Qastan op onze blog en ontdek hoe we jouw digitale transformatie kunnen ondersteunen!" imageUrl="https://images.unsplash.com/photo-1586776977607-310e9c725c37?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
+        <CardWImage title="Ontdek onze blog" cardWImageData={cardWImageData} tags={tags} detailPageRoute="/Blog" />
       </div>
-      <CardWImage title="Ontdek onze blog" cardWImageData={cardWImageData} tags={tags} detailPageRoute="/Blog" />
     </>
   );
 }

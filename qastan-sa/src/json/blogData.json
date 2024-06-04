@@ -2,8 +2,7 @@
   {
     "id": "1",
     "imageUrl": [
-      "https://www.qastan.be/swfiles/files/sneller-documenten-terugvinden.jpeg",
-      "https://www.qastan.be/swfiles/files/digitale-transformatie.jpeg?nc=1715804589"
+      "https://www.qastan.be/swfiles/files/sneller-documenten-terugvinden.jpeg"
     ],
     "tags": [
       "digitaliseren"
@@ -57,7 +56,7 @@
   },
   {
     "id": "3",
-    "imageUrl": "https://www.qastan.be/swfiles/files/Ontwikkeling-op-AS400-720x340-tab.jpeg",
+    "imageUrl": "https://www.qastan.be/swfiles/files/Ontwikkeling-op-AS400.jpeg?nc=1708807790",
     "tags": [
       "automatiseren"
     ],

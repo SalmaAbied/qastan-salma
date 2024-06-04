@@ -105,13 +105,13 @@ const ContactSection = () => {
 
           <div className="flex justify-center md:justify-start items-center gap-4">
             <span>Volg ons:</span>
-            <a title="linkedin" href="#" target="_blank" className="hover:text-darkorange transition duration-300">
+            <a title="linkedin" href="https://www.linkedin.com/company/qastan-it/" target="_blank" className="hover:text-darkorange transition duration-300">
               <Linkedin />
             </a>
-            <a title="instagram" href="#" target="_blank" className="hover:text-darkorange transition duration-300">
+            <a title="instagram" href="https://www.instagram.com/qastan_it/" target="_blank" className="hover:text-darkorange transition duration-300">
               <Instagram />
             </a>
-            <a title="facebook" href="#" target="_blank" className="hover:text-darkorange transition duration-300">
+            <a title="facebook" href="https://www.facebook.com/QastanIT?locale=nl_NL" target="_blank" className="hover:text-darkorange transition duration-300">
               <Facebook />
             </a>
           </div>

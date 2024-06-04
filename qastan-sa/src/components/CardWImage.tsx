@@ -36,8 +36,8 @@ const CardWImage: React.FC = () => {
         <div className="container mx-auto pt-56 md:pt-5 pb-10 flex justify-between">
           <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Ontdek onze toepassingen</h2>
           <span onClick={handleClick}>
-            <Link to="/Toepassingen" className="text-darkblue hover:text-lightblue transition duration-300 font-medium">
-              Ontdek al onze toepassingen
+            <Link to="/Toepassingen" className="text-darkblue hover:text-lightblue transition duration-300 font-medium group">
+              Ontdek al onze toepassingen <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">&#8594;</span>
             </Link>
           </span>
         </div>

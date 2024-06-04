@@ -70,16 +70,6 @@ const Timeline: React.FC = () => {
         <p className="mb-12 text-base italic text-gray-500 md:w-1/2">Ontdek hoe Qastan zich sinds 1998 heeft ontwikkeld van een eenmanszaak tot een toonaangevend familiebedrijf in de IT-sector, met meer dan 25 jaar expertise in het leveren van innovatieve en betrouwbare IT-oplossingen.</p>
         <div className="container mx-auto px-4">
           <div className="relative p-4 pb-20">
-            <div className="absolute inset-y-0 left-0 flex items-center">
-              <button onClick={() => scroll("left")} className="p-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-300 focus:outline-none transition duration-300">
-                <ArrowLeft size={20} />
-              </button>
-            </div>
-            <div className="absolute inset-y-0 right-0 flex items-center">
-              <button onClick={() => scroll("right")} className="p-2 bg-gray-200 rounded-full -shadow-md hover:bg-gray-300 focus:outline-none transition duration-300">
-                <ArrowRight size={20} />
-              </button>
-            </div>
             <div ref={timelineRef} className="flex overflow-x-auto space-x-8 scrollbar-hide py-4 cursor-grab" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
               {events.map((event, index) => (
                 <div key={index} className="min-w-[200px] bg-slate-50 p-4 rounded-lg shadow-lg md:min-w-[250px] flex flex-col items-center">
@@ -89,8 +79,16 @@ const Timeline: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div><div className="flex justify-center mt-4">
+            <button onClick={() => scroll("left")} className="p-2">
+              <ArrowLeft size={24} />
+            </button>
+            <button onClick={() => scroll("right")} className="p-2">
+              <ArrowRight size={24} />
+            </button>
           </div>
+          </div>
+          
         </div>
       </div>
     </>

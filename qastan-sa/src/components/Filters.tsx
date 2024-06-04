@@ -49,7 +49,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
     setCurrentPage(1);
   };
 
-  const cardsPerPage = 6;
+  const cardsPerPage = 8;
   const filteredCardWImageData = selectedTags.length === 0 ? cardWImageData : cardWImageData.filter((card) => card.tags.some((tag) => selectedTags.includes(tag)));
   const totalPages = Math.ceil(filteredCardWImageData.length / cardsPerPage);
   const currentCards = filteredCardWImageData.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage);
@@ -71,7 +71,7 @@ const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, de
             ))}
           </div>
         </div>
-        <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 container mx-auto">
+        <div className="px-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 container mx-auto">
           {currentCards.map((card) => (
             <div key={card.id} className="bg-slate-50 shadow-lg shadow-darkblue/50 rounded-lg shadow-lg mb-8 flex flex-col">
               <div className="sm:w-fit h-80 object-contain overflow-hidden flex items-center rounded-t-lg">
