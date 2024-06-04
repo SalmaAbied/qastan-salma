@@ -1,34 +1,54 @@
-[
+{
+  "vacatures": [
     {
       "id": "1",
-      "imageUrl": "https://images.unsplash.com/photo-1587384474964-3a06ce1ce699?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Excelsior",
-      "description": "Onze eigen zaalvoetbalploeg voor de Ronaldo’s en Messi’s onder ons. Aangevuurd door onze kapitein Thomas, maken we van fair-play een erezaak.",
-      "subtitles": ["hello", "hellosdflkj", "helloo"],
-      "content": ["ioren", "lhdksjnc", "dhiosf"]
-    },
-    {
-      "id": "2",
-      "imageUrl": "https://www.qastan.be/swfiles/files/unsplash_pMLf5_j-2_Y-mob.jpg?nc=1708953614",
-      "title": "Gaming",
-      "description": "Geen IT’ers zonder een eigen portie gaming. Of het nu ‘Halo’, een FIFAtornooi op de Xbox of strategisch samenzweren in ‘Among Us’ is, once a nerd, always a nerd.",
-      "subtitles": ["hello", "hellosdflkj", "helloo"],
-      "content": ["ioren", "lhdksjnc", "dhiosf"]
-    },
-    {
-      "id": "3",
-      "imageUrl": "https://images.unsplash.com/photo-1610723112396-868baffc3843?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Kicker",
-      "description": "‘Met band’, het ‘tikske’ of via ‘trick shot’, wekelijks strijden onze puffins in 2 competities (Pro League vs. Amateurs) om de felbegeerde beker én bijhorende bicky burger.",
-      "subtitles": ["hello", "hellosdflkj", "helloo"],
-      "content": ["ioren", "lhdksjnc", "dhiosf"]
-    },
-    {
-      "id": "4",
-      "imageUrl": "https://images.unsplash.com/photo-1619812787348-033587e6f8a2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Friday drink",
-      "description": "Op vrijdag kaarten we even na. Gekoelde drankjes of een goeie kop koffie en thee zijn sowieso een must op werkdagen, maar vrijdagmiddag mag het net iets meer zijn …",
-      "subtitles": ["hello", "hellosdflkj", "helloo"],
-      "content": ["ioren", "lhdksjnc", "dhiosf"]
+      "title": "React Ontwikkelaar",
+      "bedrijf": "Qastan IT",
+      "locatie": "Brugsesteenweg 48, Kuurne",
+      "description": "Als React Ontwikkelaar sta je in voor de ontwikkeling van diverse webprojecten. Hierbij werk je actief mee aan het ontwerp, de ontwikkeling en onderhoud voor tal van klanten.",
+      "vereisten": {
+        "grondige_kennis": [
+          { "naam": "ReactJS", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" },
+          { "naam": "HTML", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" },
+          { "naam": "CSS", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" },
+          { "naam": "Git", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" },
+          { "naam": "JavaScript", "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
+          { "naam": "RESTful API's", "logo": "https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png" },
+          { "naam": "Node.js", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" }
+        ],
+        "extra_kennis": [
+          { "naam": "SQL", "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" },
+          { "naam": "Typescript", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" },
+          { "naam": "Photoshop", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png" }
+        ],
+        "werkervaring": "Een bewezen werkervaring of professionele bachelor in een richting in lijn met deze bovenstaande vaardigheden."
+      },
+      "competenties": [
+        "Sterke communicatieve vaardigheden",
+        "Vermogen om goed samen te werken binnen het team",
+        "Teamplayer die loyaliteit hoog in het vaandel draagt",
+        "Passie voor ontwikkeling op het web en kwaliteit",
+        "Mee willen denken met de klant om de applicatie naar een hoger niveau te tillen",
+        "Processen verder optimaliseren waar nodig"
+      ],
+      "dagelijkse_taken": [
+        "Aankomst in het Qastan-kantoor te Kuurne met flexibele werkuren",
+        "Overleg met collega’s over de planning opgesteld door de projectleider",
+        "Webportaal voor een transporteur afwerken",
+        "Spelletje op de kicker met collega’s",
+        "Gezellige lunch met collega’s",
+        "Project meeting voor uitbreiding op huidige toepassingen van een klant",
+        "Klant van gisteren opbellen om te zien of alles goed verlopen is",
+        "Brainstorm-sessie voor nieuwe product lancering",
+        "Eigen agenda bijwerken en rapporteren aan de projectleider",
+        "Dag afsluiten en huiswaarts keren"
+      ],
+      "aanbod": {
+        "omschrijving": "Een interessante job in familiale sfeer met een grote werkzekerheid en een aantrekkelijk salarispakket. Met flexibele arbeidstijden streven we een goede balans tussen privé- en werksfeer na.",
+        "omgeving": "Motiverende en dynamische omgeving met jong en modern management",
+        "groeiplan": "Er wordt een groeiplan op maat ontwikkeld waarbij doorgroeimogelijkheden mogelijk zijn."
+      },
+      "image": "https://images.unsplash.com/photo-1592609931041-40265b692757?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
+}

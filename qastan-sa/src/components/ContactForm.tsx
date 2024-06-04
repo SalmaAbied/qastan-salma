@@ -51,7 +51,7 @@ const ContactSection = () => {
                 <input type="checkbox" className="form-checkbox" />
                 <span className="ml-2 text-sm">
                   Ik accepteer de{" "}
-                  <a href="/Cookies" className="underline hover:text-darkorange transition duration-300">
+                  <a href="/Cookies" className="underline hover:text-darkorange transition duration-300" target="_blank">
                     privacyvoorwaarden
                   </a>
                 </span>
