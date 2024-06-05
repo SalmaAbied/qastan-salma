@@ -5,23 +5,188 @@
       "title": "React Ontwikkelaar",
       "bedrijf": "Qastan IT",
       "locatie": "Brugsesteenweg 48, 8520 Kuurne",
-      "description": "Als React Ontwikkelaar sta je in voor de ontwikkeling van diverse webprojecten. Hierbij werk je actief mee aan het ontwerp, de ontwikkeling en onderhoud voor tal van klanten.",
+      "profile": "Als React Ontwikkelaar sta je in voor de ontwikkeling vandiverse webprojecten. Hierbij werk je actief mee aan het ontwerp, de ontwikkeling en onderhoud voor tal van klanten.",
+      "description": "Als react-ontwikkelaar ben je dé expert bij uitstek voor alle digitalisering- en automatiseringstoepassingen van onze klanten. Samen met het team streef je er naar om nieuwe applicaties te bouwen of bestaande verder te laten evolueren en te optimaliseren. Documentatie hou je up-to-date, testen is jouw 2e natuur maar ook monitoring kent geen geheimen meer. Kortom: je ademt IT. Word je meteen enthousiast als het over digitalisering en automatisering gaat? Solliciteer vandaag nog.",
       "vereisten": {
         "grondige_kennis": [
-          { "naam": "ReactJS", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" },
-          { "naam": "HTML", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" },
-          { "naam": "CSS", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" },
-          { "naam": "Git", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" },
-          { "naam": "JavaScript", "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
-          { "naam": "RESTful API's", "logo": "https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png" },
-          { "naam": "Node.js", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" }
+          {
+            "naam": "ReactJS",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
+          },
+          {
+            "naam": "HTML",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+          },
+          {
+            "naam": "CSS",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+          },
+          {
+            "naam": "Git",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
+          },
+          {
+            "naam": "JavaScript",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+          },
+          {
+            "naam": "RESTful API's",
+            "logo": "https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png"
+          },
+          {
+            "naam": "Node.js",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+          }
         ],
         "extra_kennis": [
-          { "naam": "SQL", "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" },
-          { "naam": "Typescript", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" },
-          { "naam": "Photoshop", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png" }
+          {
+            "naam": "SQL",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+          },
+          {
+            "naam": "Typescript",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+          },
+          {
+            "naam": "Photoshop",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+          }
         ],
-        "werkervaring": "1 jaar of een bachelor in die richting"
+        "werkervaring": "een bachelor/master of gelijkwaardig door werkervaring"
+      },
+      "competenties": [
+        "Sterke communicatieve vaardigheden",
+        "Vermogen om goed samen te werken binnen het team",
+        "Teamplayer die loyaliteit hoog in het vaandel draagt",
+        "Passie voor ontwikkeling op het web en kwaliteit",
+        "Mee willen denken met de klant om de applicatie naar een hoger niveau te tillen",
+        "Processen verder optimaliseren waar nodig"
+      ],
+      "dagelijkse_taken": [
+        "Je komt aan in het Qastan-kantoor te Kuurne. Sommigevan jouw collega’s zijn reeds aan het werk, terwijl anderepas later aankomen. Flexibele werkuren? Check!",
+        "'Laten we eerst een kop koffie nemen!', roept een collegaje toe. Ondertussen bekijk je even de planning die door deprojectleider opgesteld werd. Een kleine onduidelijkheid? Snel even overleggen. Bureaus binnen en buiten lopen, laagdrempeligheid troef!",
+        "Jouw hoofdtaak bestaat er vandaag voornamelijk in omhet webportaal voor voor een transporteur af te werken.Gisteren werkte je immers reeds een onlineplanningsysteem voor die andere klant af.",
+        "'Is het al zo laat?' Tijd voor een spelletje op de kicker met de collega’s. Benieuwd naar wat de inzet van de wedstrijd van vandaag is...",
+        "Na een gezellige lunch met de collega’s, schuif je mee aan tafel voor een project meeting. 'Drink je nog iets, een cola misschien?' vraagt een van jouw collega’s terwijl hij de vergaderzaal binnenloopt. Eén van de klanten heeft een uitbreiding op zijn huidige toepassingen gevraagd. Samen met de designer, ontwikkelaar en installateur bekijk je de mogelijkheden.",
+        "Na de meeting nog vlug even de klant van gisteren opbellen om te zien of alles goed verlopen is. 'Perfect'. Vlug nog even een brainstorm-sessie. Vandaag bekijken we de mogelijkheden om een nieuw product te lanceren en jou creatieve input is goudwaard.",
+        "Nog even werk je je eigen agenda bij en rapporteer je aan de projectleider. Morgen werk je immers een dagje van thuis uit.",
+        "Onder de stralende zon, keer je goedgemutst terug huiswaarts."
+      ],
+      "aanbod": {
+        "omschrijving": "Een interessante job in familiale sfeer met een grote werkzekerheid en een aantrekkelijk salarispakket. Met flexibele arbeidstijden streven we een goede balans tussen privé- en werksfeer na.",
+        "omgeving": "Motiverende en dynamische omgeving met jong en modern management",
+        "groeiplan": "Er wordt een groeiplan op maat ontwikkeld waarbij doorgroeimogelijkheden mogelijk zijn."
+      },
+      "image": "https://images.unsplash.com/photo-1592609931041-40265b692757?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "title": "Software Ontwikkelaar",
+      "bedrijf": "Qastan IT",
+      "locatie": "Brugsesteenweg 48, 8520 Kuurne",
+      "profile": "Je hebt je eerste werkervaring reeds achter de rug en kan steunen op een professionele bachelor/master informatica of gelijkwaardig door werkervaring. Heb je kennis van minstens 1 programmeertaal (C#, .NET, C++,...)? SQL en databanken hebben eigenlijk geen geheimen meer voor jou? Je bent leergierig om nieuwe programmeertalen - on the job - onder de knie te krijgen.",
+      "description": "Als software-ontwikkelaar ben je dé expert bij uitstek voor alle digitalisering- en automatiseringstoepassingen van onze klanten. Samen met het team streef je er naar om nieuwe applicaties te bouwen of bestaande verder te laten evolueren en te optimaliseren. Documentatie hou je up-to-date, testen is jouw 2e natuur maar ook monitoring kent geen geheimen meer. Kortom: je ademt IT. Word je meteen enthousiast als het over digitalisering en automatisering gaat? Solliciteer vandaag nog.",
+      "vereisten": {
+        "grondige_kennis": [
+          {
+            "naam": "C#",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"
+          },
+          {
+            "naam": ".NET",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/456px-Microsoft_.NET_logo.svg.png"
+          },
+          {
+            "naam": "C++",
+            "logo": "https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png"
+          },
+          {
+            "naam": "SQL",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+          }
+        ],
+        "extra_kennis": [
+          {
+            "naam": "Windev",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/c/cc/Logo_windev_27.png"
+          }
+        ],
+        "werkervaring": "1 jaar of een bachelor/master informatica of gelijkwaardig door werkervaring"
+      },
+      "competenties": [
+        "Communicatief",
+        "Leervermogen hebben",
+        "Resultaatgerichtheid",
+        "Creatief denken (Inventiviteit)",
+        "Zelfstandig werken",
+        "Zich kunnen aanpassen aan veranderende omstandigheden (flexibiliteit)",
+        "Klantgericht"
+      ],
+      "dagelijkse_taken": [
+        "Je komt aan in het Qastan-kantoor te Kuurne. Sommige van jouw collega's zijn reeds aan het werk, terwijl andere pas later aankomen. Flexibele werkuren? Check!",
+        "'Laten we eerst een kop koffie nemen!', roept een collega jou toe. Ondertussen bekijk je even de planning die door de project manager opgesteld werd. Een kleine onduidelijkheid? Snel even met de team leaders overleggen. Bureaus binnen en buiten lopen, laagdrempeligheid troef!",
+        "Jouw hoofdtaak bestaat er vandaag voornamelijk in om - op basis van de aangeleverde specificaties - een mobiele toepassing af te werken. Gisteren werkte je immers reeds een planningsysteem voor die andere klant af.",
+        "'Is het al zo laat?' Tijd voor een spelletje op de kicker met de collega's. Benieuwd wat de inzet van de wedstrijd van vandaag is...",
+        "Na een gezellige lunch met de collega's op het terras, schuif je mee aan tafel voor een project meeting. 'Drink je nog iets, een cola misschien?' vraagt een van jouw collega's terwijl hij de vergaderzaal binnenloopt. Eén van de klanten heeft een uitbreiding op zijn huidige toepassingen gevraagd. Samen met de designer, ontwikkelaar en installateur bekijk je de mogelijkheden.",
+        "Na de meeting nog vlug even de klant van gisteren opbellen om te zien of alles goed verlopen is. 'Perfect'. Vlug even stoom afblazen tijdens een spelletje op de playstation alvorens bij de brainstorm-sessie aan te sluiten. Het marketingteam bekijkt de mogelijkheden om een nieuw product te lanceren en vraagt de creatieve input van de andere ontwikkelaars.",
+        "Nog even werk je je eigen agenda bij en rapporteer je aan de senior ontwikkelaar.",
+        "Onder de stralende zon, keer je goedgemutst terug huiswaarts."
+      ],
+      "aanbod": {
+        "omschrijving": "Een interessante job in familiale sfeer met een grote werkzekerheid en een aantrekkelijk salarispakket. Met flexibele arbeidstijden streven we een goede balans tussen privé- en werksfeer na.",
+        "omgeving": "Motiverende en dynamische omgeving met jong en modern management",
+        "groeiplan": "Er wordt een groeiplan op maat ontwikkeld waarbij doorgroeimogelijkheden mogelijk zijn."
+      },
+      "image": "https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "title": "Support Engineer",
+      "bedrijf": "Qastan IT",
+      "locatie": "Brugsesteenweg 48, 8520 Kuurne",
+      "profile": "Je ademt IT en hebt een duidelijke IT-georiënteerde mindset. Met zin voor initiatief werk je liever pro-actief dan achter de feiten aan te lopen. Je denkt mee mee met de klant, die steeds kan rekenen op jouw expertise. Met sterke communicatievaardigheden kan je een technische oplossing helden uitleggen aan niet-technische eindgebruikers.",
+      "description": "Als support engineer ben je een belangrijke schakel in de ondersteuning van de IT-infrastructuur bij onze klanten. Je neemt initiatief en denkt mee met de klant om steeds een geschikte oplossing te vinden.",
+      "vereisten": {
+        "grondige_kennis": [
+          {
+            "naam": "Windows Server",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/2/26/Windows_Server_logo.svg"
+          },
+          {
+            "naam": "Exchange Server",
+            "logo": "https://download.logo.wine/logo/Microsoft_Exchange_Server/Microsoft_Exchange_Server-Logo.wine.png"
+          },
+          {
+            "naam": "SQL Server",
+            "logo": "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
+          },
+          {
+            "naam": "Office 365",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Microsoft_365_%282022%29.svg/1862px-Microsoft_365_%282022%29.svg.png"
+          },
+          {
+            "naam": "Fortinet",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/6/62/Fortinet_logo.svg"
+          },
+          {
+            "naam": "VmWare",
+            "logo": "https://1000logos.net/wp-content/uploads/2021/05/VMware-logo.png"
+          },
+          {
+            "naam": "Veeam",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Veeam_logo.png"
+          },
+          {
+            "naam": "VPN",
+            "logo": "https://static-00.iconduck.com/assets.00/vpn-icon-1863x2048-b1dwlnad.png"
+          },
+          {
+            "naam": "Azure",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/2560px-Microsoft_Azure_Logo.svg.png"
+          }
+        ],
+        "extra_kennis": [],
+        "werkervaring": "een bachelor/master of gelijkwaardig door werkervaring"
       },
       "competenties": [
         "Sterke communicatieve vaardigheden",
@@ -48,7 +213,7 @@
         "omgeving": "Motiverende en dynamische omgeving met jong en modern management",
         "groeiplan": "Er wordt een groeiplan op maat ontwikkeld waarbij doorgroeimogelijkheden mogelijk zijn."
       },
-      "image": "https://images.unsplash.com/photo-1592609931041-40265b692757?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "image": "https://images.unsplash.com/photo-1573495627361-d9b87960b12d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }
