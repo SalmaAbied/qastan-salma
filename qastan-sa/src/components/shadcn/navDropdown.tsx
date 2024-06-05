@@ -5,17 +5,17 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Digitaliseren via FITdoc DMS",
+    title: "Digitaliseren",
     href: "/Digitaliseren",
     description: "Van kleine tot grote digitaliserings- en scanoplissingen. Op maat of gewoon standaard.",
   },
   {
-    title: "Automatiseren via Cirta ERP",
+    title: "Automatiseren en Initaliseren",
     href: "/Automatiseren",
     description: "Centraliseer alle logistieke, administratieve en financiële processen in één enkele applicatie.",
   },
   {
-    title: "Plannen via MountQ",
+    title: "Plannen",
     href: "/Plannen",
     description: "Intelligente planningsystemen (AI-based) en werkplekplanning die het verschil maken.",
   },

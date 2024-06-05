@@ -4,7 +4,7 @@
       "id": "1",
       "title": "React Ontwikkelaar",
       "bedrijf": "Qastan IT",
-      "locatie": "Brugsesteenweg 48, Kuurne",
+      "locatie": "Brugsesteenweg 48, 8520 Kuurne",
       "description": "Als React Ontwikkelaar sta je in voor de ontwikkeling van diverse webprojecten. Hierbij werk je actief mee aan het ontwerp, de ontwikkeling en onderhoud voor tal van klanten.",
       "vereisten": {
         "grondige_kennis": [
@@ -21,7 +21,7 @@
           { "naam": "Typescript", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" },
           { "naam": "Photoshop", "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png" }
         ],
-        "werkervaring": "Een bewezen werkervaring of professionele bachelor in een richting in lijn met deze bovenstaande vaardigheden."
+        "werkervaring": "1 jaar of een bachelor in die richting"
       },
       "competenties": [
         "Sterke communicatieve vaardigheden",
