@@ -28,13 +28,15 @@
         "description": "Behoed jouw bedrijf op mogelijk cyberaanvallen door alle medewerkers attent te maken op de gevaren van phishing en het belang van een veilig werkomgeving.",
         "probleem": {
             "title": "Probleem",
-            "description": "Je verliest veel tijd met handmatige data-entry en het bijwerken van meerdere systemen leidt tot fouten en inconsistenties."
+            "description": "In meer dan 90% van de cyberaanvallen en datalekken liggen menselijke fouten aan de basis. Deze starten meestal met frauduleuze mails in de mailbox van een medewerker."
         },
         "oplossing": {
             "title": "Oplossing",
-            "description": "Met DataSync automatiseer je het synchronisatieproces tussen al je systemen, waardoor je fouten vermindert en tijd bespaart. Alle data wordt nauwkeurig en consistent bijgewerkt, waardoor je operationele efficiëntie toeneemt."
+            "description": "Opleidingen en trainingen versterken de weerbaarheid van organisaties. De sterkste verdediging (maar ook het grootste risico) wordt gevormd door de mensen binnen de eigen organisatie."
         },
-        "buttontext": "Meer informatie",
+        "uitleg": "Onze trainingen richten zich in de eerste plaats op het weerbaar en bewust maken van de risico’s van phishing bij medewerkers en organisaties. Deze zogenaamde phishingtechnieken azen mails worden steeds beter en gerichter opgesteld en maken in vele gevallen gebruik van persoonlijke gegevens. Vaak is het onwetendheid of onoplettendheid die aan de basis ligt om de mails, de bijlages of de link aan te klikken. Al onze trainingen worden gepersonaliseerd op basis van het niveau en het gedrag van elke gebruiker, ongeacht de grootte van de organisatie.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/Cyberawarenesstraining-ITpartner.png"
     },
     {
@@ -47,13 +49,21 @@
         "description": "Scan en herken facturen automatisch waardoor het facturatie- en goedkeuringsproces mooi gestroomlijnd is.",
         "probleem": {
             "title": "Probleem",
-            "description": "Je hebt moeite om een overzicht te houden van alle taken en deadlines, waardoor projecten vertraging oplopen en klanten ontevreden raken."
+            "description": "Facturen overtypen of printen is een tijdrovende en vervelende klus."
         },
         "oplossing": {
             "title": "Oplossing",
-            "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
+            "description": "Stroomlijn het volledige facturatie- en goedkeuringsproces. Automatiseer, beheer en kies voor meer inzicht en financiële controle. Of het nu gaat om papieren facturen of digitale, voor beide processen hebben we een passende oplossing. Je vermindert repetitief werk zoals overtypen en inscannen. Met een sterke herkenningsgraad op diverse facturen (zowel Benelux als EU, VS, China, …) wordt het overzicht bewaard en wordt een direct boekingsvoorstel uitgewerkt."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": [
+            "Alle facturen worden vanuit een centrale mailbox of na het scannen vanuit een gedeelde map opgehaald en naar het digitale archief gestuurd.",
+            "OCR-herkenning leest het document (factuur, leveringsbon, verzendnota, CMR,...) in.",
+            "Via onze AI-module wordt alle gewenste data (BTW-nr, factuurnummer, bedragen,…) automatisch uit het document gehaald. Wens je specifieke data uit de factuur te halen? Dan passen we dit eenvoudig aan.",
+            "Stroomlijn goedkeuring en verificatie van facturen via onze online portal of mobiele applicatie. Splitsen over meerdere goedkeurders, vestigingen of projectleiders: alles is mogelijk. Bovendien kan dit traject zowel voor als na het boekingsvoorstel opgemaakt worden.",
+            "Koppeling aan andere documenten is mogelijk: denk aan het koppelen van leveringsbonnen of verzendnota’s aan aankoopfacturen."
+        ],
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://qastan.be/swfiles/files/itsupport.jpeg"
     },
     {
@@ -66,13 +76,16 @@
         "description": "Met een klanten- of leveranciersportaal zorg je ervoor dat jouw klanten op een makkelijke manier hun dossiers kunnen opvolgen of bestellingen kunnen plaatsen zonder extra administratie voor jouw medewerkers.",
         "probleem": {
             "title": "Probleem",
-            "description": "Je hebt moeite om een overzicht te houden van alle taken en deadlines, waardoor projecten vertraging oplopen en klanten ontevreden raken."
+            "description": "De administratie is heel tijdrovend voor de eigen medewerkers en klanten hebben weinig tot geen zicht op de stand van zaken van hun dossier."
         },
         "oplossing": {
             "title": "Oplossing",
-            "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
+            "description": "Een klanten- of leveranciersportaal opzetten. Dit kan voor verschillende doeleinden dienen:",
+            "steps": ["De klanten geven zelf hun orders in.","Klanten kunnen hun eigen dossier gemakkelijk opvolgen.", "Offertes digitaal ondertekenen.", "Onderaannemers kunnen de nodige werken in regie uitvoeren en tijdig rapporteren (vb. vorderingsstaten).", "Een intern portaal kan gebruikt worden om informatie op een snelle manier te raadplegen (vb. facturatie, intranet, …) en te beheren.", "Documenten of planning ter beschikking stellen van derden."]
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Onze klantenportalen worden aangepast naar de wensen van de klant (kleuren, logo, …) en kunnen losstaand maar ook geïntegreerd worden binnen jouw bestaande omgeving. Een webportaal kan zo een echte blikvanger zijn of onderdeel in het verbeteren van de customer intimacy-strategie. Een koppeling met een WMS, ERP of andere is zeker mogelijk. Hierdoor kan er achterliggend al een stuk van de bedrijfsprocessen geautomatiseerd worden. Uiteraard hechten we belang aan veiligheid. Onze portalen worden standaard uitgerust met een 2-stapsauthenticatie en zijn volledig GDPR-proof.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/klantenportaal-digitaalportaal.jpeg"
     },
     {
@@ -85,13 +98,15 @@
         "description": "Bespaar meer tijd door repetitieve handelingen te automatiseren, waardoor er meer ruimte is voor waardevollere taken. Kies voor een efficiëntere en productievere workflow.",
         "probleem": {
             "title": "Probleem",
-            "description": "Je hebt moeite om een overzicht te houden van alle taken en deadlines, waardoor projecten vertraging oplopen en klanten ontevreden raken."
+            "description": "Je hebt verschillende taken waarbij je steeds dezelfde soort acties moet uitvoeren. Het neemt veel tijd in beslag en kan na een tijdje vervelen, waardoor er fouten gemaakt worden. Denk bijvoorbeeld aan het overtypen van facturen of documenten, omzetten in pdf en versturen, …"
         },
         "oplossing": {
             "title": "Oplossing",
-            "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
+            "description": "Wij helpen je om deze repetitieve handelingen te automatiseren via artificiële intelligentie (AI) waardoor je enorm veel tijd bespaart. Zo is er meer ruimte voor taken waar jij goed in bent. We brengen de bedrijfsprocessen in kaart en gaan samen met de eindgebruiker na waar optimalisatie mogelijk is. Welke processen kunnen makkelijk aangepakt worden? Welke processen vormen de zogenaamde ‘happy flow’, ofwel het proces in zijn meest simpele basisvorm, die in 80% van alle gevallen hetzelfde blijft?"
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/artificiele-intelligentie-ai-voor-documenten.jpeg"
     },
     {
@@ -109,7 +124,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/digitaliseren-archief.jpeg"
     },
     {
@@ -127,7 +144,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/digitaliseren-archief.jpeg"
     },
     {
@@ -145,7 +164,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/laura-ockel-UQ2Fw_9oApU-unsplash-tab.jpg"
     },
     {
@@ -163,7 +184,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/lenny-kuhne-jHZ70nRk7Ns-unsplash-tab.jpg"
     },
     {
@@ -181,7 +204,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/kvalifik-5Q07sS54D0Q-unsplash-tab.jpg"
     },
     {
@@ -199,7 +224,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/alvaro-reyes-qWwpHwip31M-unsplash1-tab.jpg"
     },
     {
@@ -217,7 +244,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/scheduling-en-planning.jpeg"
     },
     {
@@ -235,7 +264,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/personeelsplanning.jpeg"
     },
     {
@@ -253,7 +284,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/digitale-productieplanning.jpeg"
     },
     {
@@ -271,7 +304,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/competentiematrix.jpeg"
     },
     {
@@ -289,7 +324,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/qastan-planning.jpeg"
     },
     {
@@ -307,7 +344,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/scheduling-en-planning.jpeg"
     },
     {
@@ -325,7 +364,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/itsupport.jpeg"
     },
     {
@@ -344,7 +385,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/hardware-leverancier-itpartner.jpeg"
     },
     {
@@ -363,7 +406,9 @@
             "title": "Oplossing",
             "description": "Met TaskMaster krijg je een geïntegreerd platform voor taakbeheer en projectmanagement. Je kunt taken toewijzen, deadlines instellen en de voortgang van projecten bijhouden, waardoor je projecten op tijd en binnen budget kunt opleveren."
         },
-        "buttontext": "Gratis proefversie",
+        "uitleg": "Je legt de basis tot verdere automatisering, want eens je alle documenten centraal beheert, kunnen ze makkelijker verspreid worden binnen de eigen organisatie of naar klanten/leveranciers toe. We kiezen steeds voor oplossingen op maat van jouw bedrijf.",
+        "buttontext": "Contacteer ons",
+        "href": "/Contact",
         "imageURL": "https://www.qastan.be/swfiles/files/john-schnobrich-FlPc9_VocJ4-unsplash-tab.jpg"
     }
 ]
