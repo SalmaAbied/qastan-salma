@@ -44,6 +44,7 @@ const SollicitatieFormulier = () => {
       <div className="grid md:grid-cols-2 gap-4 px-4 container mx-auto">
         <div className="">
           <form onSubmit={handleSubmit} className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h1 className="text-4xl font-bold mb-5">Solliciteer nu:</h1>
             <div className="mb-6">
               <label htmlFor="voornaam" className="block text-gray-700 font-bold mb-2">
                 Voornaam:

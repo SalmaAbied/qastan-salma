@@ -13,7 +13,7 @@ function Footer() {
               <div>
                 <h4 className="text-lg font-medium">Adres</h4>
                 <hr className="w-12 h-0.5 bg-darkorange border-0 mb-3" />
-                <a href="https://www.google.com/maps/place/Qastan/@50.8474241,3.2672585,17z/data=!3m1!4b1!4m6!3m5!1s0x47c33b38c907acab:0xa4d789daf58fe395!8m2!3d50.8474241!4d3.2698334!16s%2Fg%2F11sgn6nm40?entry=ttu" target="_blank">
+                <a className="hover:text-darkorange transition duration-300" href="https://www.google.com/maps/place/Qastan/@50.8474241,3.2672585,17z/data=!3m1!4b1!4m6!3m5!1s0x47c33b38c907acab:0xa4d789daf58fe395!8m2!3d50.8474241!4d3.2698334!16s%2Fg%2F11sgn6nm40?entry=ttu" target="_blank">
                   Brugsesteenweg 48, 8520 Kuurne
                 </a>
               </div>
@@ -23,7 +23,9 @@ function Footer() {
               <div>
                 <h4 className="text-lg font-medium">Neem contact op met ons</h4>
                 <hr className="w-12 h-0.5 bg-darkorange border-0 mb-3" />
-                <a href="tel:051310744">+32 (0)51 31 07 44</a>
+                <a className="hover:text-darkorange transition duration-300" href="tel:051310744">
+                  +32 (0)51 31 07 44
+                </a>
               </div>
             </div>
             <div className="flex items-center">
@@ -31,18 +33,20 @@ function Footer() {
               <div>
                 <h4 className="text-lg font-medium">Mail ons</h4>
                 <hr className="w-12 h-0.5 bg-darkorange border-0 mb-3" />
-                <a href="mailto:info@qastan.be">info@qastan.be</a>
+                <a className="hover:text-darkorange transition duration-300" href="mailto:info@qastan.be">
+                  info@qastan.be
+                </a>
               </div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
             <div>
-              <a href="/">
+              <a className="hover:text-darkorange transition duration-300" href="/">
                 <img src={logo} alt="logo" className="max-w-40" />
               </a>
               <div className="flex space-x-3 mt-5">
                 <span className="text-lg font-medium">Volg ons</span>
-                <a href="https://www.facebook.com/profile.php?id=100090413298416&locale=nl_NL" target="_blank" className="text-2xl text-darkorange">
+                <a href="https://www.facebook.com/QastanIT?locale=nl_NL" target="_blank" className="text-2xl text-darkorange">
                   <Facebook />
                 </a>
                 <a href="https://www.instagram.com/qastan_it/" target="_blank" className="text-2xl text-darkorange">
