@@ -11,8 +11,8 @@ function Oplossingen() {
       <HeroDetail /> {/* SEO */}
       <Intro /> {/* SEO */}
       <Grid />
-      <LogoSlider />
-      <Banner />
+      <LogoSlider /> {/* SEO */}
+      <Banner /> {/* SEO */}
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import CardDetail from "../components/CardDetail";
 import HeroWText from "../components/HeroWText";
 import CardWImage from "../components/Filters";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const cardData = [
   {
@@ -59,13 +60,25 @@ const tags = ["ontwikkelaar", "engineer", "IT-infrastructuur"];
 
 function Jobs() {
   return (
-    <>
+    // SEO is toegevoegd op deze pagina
+    <HelmetProvider>
+      <Helmet>
+        <title>Werken bij Qastan - Ontdek Onze Vacatures</title>
+        <meta
+          name="description"
+          content="Zin om mee te duiken in onze uitdagende projecten? Gemotiveerde collega’s zijn altijd welkom bij Qastan. Ontdek onze openstaande vacatures en solliciteer vandaag nog."
+        />
+        <meta
+          name="keywords"
+          content="Qastan, werken bij Qastan, vacatures, IT jobs, software ontwikkelaar, support engineer, digitalisering, automatisering"
+        />
+      </Helmet>
       <HeroWText badgeText="Jobs" heading="Werken bij qastan" paragraph="Zin om mee te duiken in onze uitdagende projecten? Gemotiveerde collega’s zijn altijd welkom!" buttonText="Bekijk onze vacatures" buttonLink="#jobs" imageUrl="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" />
       <CardDetail cardData={cardData} />
       <div id="jobs">
         <CardWImage title="Ontdek onze openstaande vacatures" cardWImageData={cardWImageData} tags={tags} detailPageRoute="/Jobs" />
       </div>
-    </>
+    </HelmetProvider>
   );
 }
 

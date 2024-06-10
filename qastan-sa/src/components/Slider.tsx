@@ -4,6 +4,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const partners = [
   {
@@ -97,30 +98,43 @@ function LogoSlider() {
   };
 
   return (
-    <div className="pt-10 container mx-auto">
-      <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Onze partners</h2>
-      <Slider ref={sliderRef} {...settings} className="py-10 flex justify-center">
-        {partners.map((partner) => (
-          <div key={partner.id} className="px-2">
-            <Link to={partner.url}>
-              <div className="border-2 border-darkblue rounded-lg hover:border-darkorange transition duration-300">
-                <div className="p-4 flex justify-center">
-                  <img src={partner.logoUrl} alt={partner.name} className="w-36 h-36 object-contain" />
+    <HelmetProvider>
+      <Helmet>
+        <title>Onze Partners - Qastan</title>
+        <meta
+          name="description"
+          content="Bekijk de partners van Qastan en ontdek hoe we samenwerken met toonaangevende bedrijven om digitale oplossingen te bieden."
+        />
+        <meta
+          name="keywords"
+          content="Qastan, partners, IT-partners, digitale oplossingen, samenwerking"
+        />
+      </Helmet>
+      <div className="pt-10 container mx-auto">
+        <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Onze partners</h2>
+        <Slider ref={sliderRef} {...settings} className="py-10 flex justify-center">
+          {partners.map((partner) => (
+            <div key={partner.id} className="px-2">
+              <Link to={partner.url}>
+                <div className="border-2 border-darkblue rounded-lg hover:border-darkorange transition duration-300">
+                  <div className="p-4 flex justify-center">
+                    <img src={partner.logoUrl} alt={partner.name} className="w-36 h-36 object-contain" />
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </Slider>
-      <div className="flex justify-center mt-4">
-        <button onClick={goToPrevSlide} className="mx-2">
-          <ArrowLeftIcon size={24} />
-        </button>
-        <button onClick={goToNextSlide} className="mx-2">
-          <ArrowRightIcon size={24} />
-        </button>
+              </Link>
+            </div>
+          ))}
+        </Slider>
+        <div className="flex justify-center mt-4">
+          <button onClick={goToPrevSlide} className="mx-2">
+            <ArrowLeftIcon size={24} />
+          </button>
+          <button onClick={goToNextSlide} className="mx-2">
+            <ArrowRightIcon size={24} />
+          </button>
+        </div>
       </div>
-    </div>
+    </HelmetProvider>
   );
 }
 
