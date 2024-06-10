@@ -1,14 +1,31 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Award, FolderPen, MapPin } from "lucide-react";
-import SollicitatieFormulier from "../components/SollicitatieForm";
-import CardFullWTwo from "../components/CardFullWTwo";
 import jobsData from "../json/jobsData.json";
+import Error from "./Error";
 
-function Vacature() {
+interface VacatureProps {
+  setError: (error: boolean) => void;
+}
+
+const Vacature: React.FC<VacatureProps> = ({ setError }) => {
   const sollicitatieRef = useRef<HTMLDivElement>(null);
   const { id } = useParams<{ id: string }>();
-  const post = jobsData.vacatures.find((p: any) => p.id === id);
+  const [post, setPost] = useState<any | null>(null);
+
+  useEffect(() => {
+    const foundPost = jobsData.vacatures.find((p: any) => p.id === id);
+    if (!foundPost) {
+      setError(true);
+    } else {
+      setError(false);
+      setPost(foundPost);
+    }
+  }, [id, setError]);
+
+  if (!post) {
+    return <Error />;
+  }
 
   return (
     <div className="container mx-auto pt-10 px-4">
@@ -111,6 +128,6 @@ function Vacature() {
       </div>
     </div>
   );
-}
+};
 
 export default Vacature;

@@ -3,8 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import blogData from "../json/blogData.json";
 import bg from "../img/cirkel.png";
 import Links from "./SideLinks";
-import ReactPlayer from "react-player";
 import VideoPlayer from "./VideoPlayer";
+import Error from "./Error";
 
 // link in text omvormen naar link
 const parseLinks = (text: string) => {
@@ -28,19 +28,7 @@ const Artikel: React.FC = () => {
   };
 
   if (!post) {
-    return (
-      <div className="my-20 p-10 container mx-auto bg-slate-50 rounded-lg shadow-lg" style={{ backgroundImage: `url(${bg})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "right" }}>
-        <Link onClick={handleClick} to="/Blog" className="text-darkblue font-medium hover:text-lightblue transition duration-300 mb-8 inline-block">
-          &larr; Terug naar blogoverzicht
-        </Link>
-        <div className="flex flex-col items-center justify-center">
-          <div className="text-center text-6xl font-semibold mb-10">Artikel niet gevonden</div>
-          <div>
-            <img src="https://images.unsplash.com/photo-1609741200064-2ef87d5eb200?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="confused lego" className="h-72 rounded-lg shadow-lg" />
-          </div>
-        </div>
-      </div>
-    );
+    return <Error />;
   }
 
   return (

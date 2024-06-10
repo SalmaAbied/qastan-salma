@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import toepassingenData from "../json/toepassingenData.json";
 import { Link } from "react-router-dom";
+import Error from "./Error";
 
 function ArtikelToepassingen() {
   const { id } = useParams<{ id: string }>();
@@ -11,7 +12,7 @@ function ArtikelToepassingen() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   if (!post) {
-    return <div>Post not found</div>;
+    return <Error />;
   }
 
   return (

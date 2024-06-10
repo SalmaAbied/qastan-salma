@@ -52,8 +52,6 @@ function Grid() {
   return (
     <div className="container mx-auto pt-20 px-2 sm:px-6 lg:px-8">
       <div>
-        {/* <h1 className="text-4xl font-bold text-gray-800 pl-5">Ontdek onze oplossingen</h1>
-        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" /> */}
         <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900 mb-10">Ontdek onze oplossingen</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 mt-2">

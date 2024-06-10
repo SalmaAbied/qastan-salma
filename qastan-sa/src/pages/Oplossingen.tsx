@@ -8,8 +8,8 @@ import Banner from "../components/Banner";
 function Oplossingen() {
   return (
     <>
-      <HeroDetail />
-      <Intro />
+      <HeroDetail /> {/* SEO */}
+      <Intro /> {/* SEO */}
       <Grid />
       <LogoSlider />
       <Banner />
