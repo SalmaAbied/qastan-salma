@@ -34,23 +34,14 @@ const FilterButton: React.FC<{ tag: string; selectedTags: string[]; toggleTag: (
 const CardWImage: React.FC<CardWImageProps> = ({ cardWImageData, tags, title, detailPageRoute }) => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
+  
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const toggleTag = (tag: string) => {
-    setSelectedTags((prevTags) => (prevTags.includes(tag) ? prevTags.filter((t) => t !== tag) : [...prevTags, tag]));
-    setCurrentPage(1);
   };
 
   const cardsPerPage = 6;
   const filteredCardWImageData = selectedTags.length === 0 ? cardWImageData : cardWImageData.filter((card) => card.tags.some((tag) => selectedTags.includes(tag)));
-  const totalPages = Math.ceil(filteredCardWImageData.length / cardsPerPage);
   const currentCards = filteredCardWImageData.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <>

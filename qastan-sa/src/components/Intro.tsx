@@ -1,27 +1,18 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import patroon from "../img/patroon.png";
 
 function Intro() {
   return (
     <HelmetProvider>
       <Helmet>
         <title>Jouw Digitale Bouwstenen - Qastan</title>
-        <meta
-          name="description"
-          content="Bij Qastan bieden we software op maat, document management en personeelsplanning. Ontdek hoe wij de digitalisering van jouw organisatie kunnen verbeteren."
-        />
-        <meta
-          name="keywords"
-          content="IT-partner, digitalisering, software op maat, document management, personeelsplanning, Qastan, digitale architecten"
-        />
+        <meta name="description" content="Bij Qastan bieden we software op maat, document management en personeelsplanning. Ontdek hoe wij de digitalisering van jouw organisatie kunnen verbeteren." />
+        <meta name="keywords" content="IT-partner, digitalisering, software op maat, document management, personeelsplanning, Qastan, digitale architecten" />
       </Helmet>
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:gap-4 md:mt-4 px-2">
         <div className="bg-bggray rounded-b-lg md:rounded-lg sm:mr-0 p-8 flex flex-col justify-between shadow-lg shadow-darkblue/50">
           <h1 className="text-4xl sm:text-5xl xl:text-6xl text-black">Jouw digitale bouwstenen</h1>
-          <p className="mb-5">
-            Op zoek naar een IT-partner om de digitalisering van je organisatie in goede banen te leiden? Software op maat, document management of personeelsplanning, bij Qastan kunnen we het allemaal. We duiken in je business, zwemmen samen richting een optimale digitale workflow en laten je bedrijf vliegen! Wij zijn de digitale architecten voor jouw organisatie of bedrijf. Net als de papegaaiduiker in ons logo, zijn onze medewerkers multi-getalenteerd en kunnen ze het hele spectrum van digitale transformatie aan.
-          </p>
+          <p className="mb-5">Op zoek naar een IT-partner om de digitalisering van je organisatie in goede banen te leiden? Software op maat, document management of personeelsplanning, bij Qastan kunnen we het allemaal. We duiken in je business, zwemmen samen richting een optimale digitale workflow en laten je bedrijf vliegen! Wij zijn de digitale architecten voor jouw organisatie of bedrijf. Net als de papegaaiduiker in ons logo, zijn onze medewerkers multi-getalenteerd en kunnen ze het hele spectrum van digitale transformatie aan.</p>
           <a href="/Over" className="rounded-full block flex items-center w-fit font-medium text-white bg-darkorange px-5 py-2 mt-4 sm:mt-0 hover:bg-lightblue hover:text-white transition duration-300">
             Meer over Qastan
           </a>

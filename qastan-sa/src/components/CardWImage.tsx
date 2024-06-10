@@ -27,6 +27,7 @@ const cardData: CardProps[] = [
 ];
 
 const CardWImage: React.FC = () => {
+  
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

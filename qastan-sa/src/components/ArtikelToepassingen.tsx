@@ -8,9 +8,11 @@ function ArtikelToepassingen() {
   const { id } = useParams<{ id: string }>();
   const post = toepassingenData.find((p: any) => p.id === id);
   const navigate = useNavigate();
+
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   if (!post) {
     return <Error />;
   }

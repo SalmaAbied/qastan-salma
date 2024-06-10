@@ -8,6 +8,7 @@ function Links() {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  
   const otherPosts = blogData.filter((p) => p.id !== id);
 
   const getRandomPosts = (posts: typeof blogData, max: number) => {

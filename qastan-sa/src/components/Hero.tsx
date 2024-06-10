@@ -26,14 +26,8 @@ const Hero: React.FC = () => {
       <div className="relative">
         <Helmet>
           <title>Qastan - Helemaal Digitaal</title>
-          <meta
-            name="description"
-            content="Op zoek naar een IT-partner om de digitalisering van je organisatie in goede banen te leiden? Ontdek onze oplossingen."
-          />
-          <meta
-            name="keywords"
-            content="IT-partner, digitalisering, organisatie, oplossingen"
-          />
+          <meta name="description" content="Op zoek naar een IT-partner om de digitalisering van je organisatie in goede banen te leiden? Ontdek onze oplossingen." />
+          <meta name="keywords" content="IT-partner, digitalisering, organisatie, oplossingen" />
           <meta name="author" content="Qastan" />
         </Helmet>
         <div className="h-[calc(100vh-90px)] relative bg-darkblue text-white rounded-b-lg 2xl:h-[calc(100vh-300px)]">

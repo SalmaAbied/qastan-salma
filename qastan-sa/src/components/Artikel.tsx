@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import blogData from "../json/blogData.json";
-import bg from "../img/cirkel.png";
 import Links from "./SideLinks";
 import VideoPlayer from "./VideoPlayer";
 import Error from "./Error";
@@ -23,6 +22,7 @@ const parseLinks = (text: string) => {
 const Artikel: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const post = blogData.find((p) => p.id === id);
+
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

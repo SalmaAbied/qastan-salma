@@ -13,7 +13,7 @@ const Home: React.FC = () => {
       <Hero /> {/* SEO */}
       <LogoSlider /> {/* SEO */}
       <CardFullW /> {/* SEO */}
-      <Tabs />
+      <Tabs /> {/* SEO */}
       <Banner /> {/* SEO */}
       <CardFullWTwo /> {/* SEO */}
       <CardWImage /> {/* SEO */}

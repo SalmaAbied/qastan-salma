@@ -8,7 +8,7 @@ const VideoPlayer: React.FC = () => {
   const post = blogData.find((p) => p.id === id);
 
   if (!post || !post.videoUrl) {
-    return null; 
+    return null;
   }
 
   return (

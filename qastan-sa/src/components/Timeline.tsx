@@ -79,16 +79,16 @@ const Timeline: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div><div className="flex justify-center mt-4">
-            <button onClick={() => scroll("left")} className="p-2">
-              <ArrowLeft size={24} />
-            </button>
-            <button onClick={() => scroll("right")} className="p-2">
-              <ArrowRight size={24} />
-            </button>
+            </div>
+            <div className="flex justify-center mt-4">
+              <button onClick={() => scroll("left")} className="p-2">
+                <ArrowLeft size={24} />
+              </button>
+              <button onClick={() => scroll("right")} className="p-2">
+                <ArrowRight size={24} />
+              </button>
+            </div>
           </div>
-          </div>
-          
         </div>
       </div>
     </>

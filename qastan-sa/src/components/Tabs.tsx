@@ -1,46 +1,79 @@
 import React, { useState, useEffect } from "react";
 import lottie from "lottie-web";
+import { Helmet } from "react-helmet";
 import digitaliserenAnimation from "../lottie/digitaliseren.json";
 import automatiserenAnimation from "../lottie/automatiseren.json";
 import plannenAnimation from "../lottie/plannen.json";
 import itAnimation from "../lottie/it.json";
 
-const Tabs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("option-1");
+interface TabContentProps {
+  title: string;
+  description: string;
+  animationData: any;
+  link: string;
+}
 
-  const handleTabClick = (tabId: string) => {
-    setActiveTab(tabId);
-  };
+interface TabProps {
+  tabId: string;
+  activeTab: string;
+  onClick: (tabId: string) => void;
+  children: React.ReactNode;
+}
+
+const Tabs: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<string>("Digitaliseren");
+
+  const tabs = [
+    {
+      id: "Digitaliseren",
+      title: "Digitaliseren",
+      description: "Archiveren, document management, digitaal ondertekenen, documentherkenning, structuur, workflow management, … Kies voor een papierloze organisatie!",
+      animation: digitaliserenAnimation,
+      link: "/Digitaliseren",
+    },
+    {
+      id: "Automatiseren",
+      title: "Automatiseren",
+      description: "100% focus op het maximaliseren van efficiëntie en productiviteit via integraties, koppelingen tussen systemen of een maatwerktoepassing om jouw organisatie aan te sturen.",
+      animation: automatiserenAnimation,
+      link: "/Automatiseren",
+    },
+    {
+      id: "Plannen",
+      title: "Plannen",
+      description: "Reduceer tijdverlies en optimaliseer productiviteit van werknemers, taken of machines. Optimaal aansturen van werknemers op basis van competenties, skills en taken.",
+      animation: plannenAnimation,
+      link: "/Plannen",
+    },
+    {
+      id: "IT",
+      title: "IT-beheer",
+      description: "Één aanspreekpunt voor alle IT-uitdagingen in jouw organisatie. Heldere communicatie, sterke expertise en duidelijk visie. Wij zijn de IT-partner die je nodig hebt!",
+      animation: itAnimation,
+      link: "/IT",
+    },
+  ];
 
   return (
     <>
+      <Helmet>
+        <title>Onze oplossingen - {activeTab}</title>
+        <meta name="description" content={tabs.find(tab => tab.id === activeTab)?.description} />
+      </Helmet>
       <div className="container mx-auto pt-56 md:pt-24 lg:pt-56 xl:pt-2 sm:pt-5">
-        {/* <h1 className="pl-5 text-4xl">Onze oplossingen</h1>
-        <hr className="ml-5 w-12 h-1 border-0 bg-darkorange block mt-2 mb-6" />
-         */}
         <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Onze oplossingen</h2>
         <p className="mb-12 text-base italic text-gray-500">Ontdek al onze oplossingen en vraag vandaag nog de gepaste oplossing voor uw bedrijf</p>
       </div>
       <div className="flex flex-col justify-center items-center px-4 py-10">
         <nav className="text-xl flex flex-col sm:flex-row gap-2 pt-1 px-3 rounded-md cursor-pointer">
-          <Tab tabId="option-1" activeTab={activeTab} onClick={handleTabClick}>
-            Digitaliseren
-          </Tab>
-          <Tab tabId="option-2" activeTab={activeTab} onClick={handleTabClick}>
-            Automatiseren
-          </Tab>
-          <Tab tabId="option-3" activeTab={activeTab} onClick={handleTabClick}>
-            Plannen
-          </Tab>
-          <Tab tabId="option-4" activeTab={activeTab} onClick={handleTabClick}>
-            IT-beheer
-          </Tab>
+          {tabs.map((tab) => (
+            <Tab key={tab.id} tabId={tab.id} activeTab={activeTab} onClick={setActiveTab}>
+              {tab.title}
+            </Tab>
+          ))}
         </nav>
         <main className="w-full text-black max-w-4xl sm:p-10 pt-2 sm:pt-4 overflow-hidden bg-slate-50 p-6 sm:p-10 sm:py-12 shadow-lg shadow-darkblue/50 w-full overflow-hidden rounded-xl duration-500 text-xl space-y-4">
-          {activeTab === "option-1" && <DigitaliseringTab animationData={digitaliserenAnimation} />}
-          {activeTab === "option-2" && <AutomatiseringTab animationData={automatiserenAnimation} />}
-          {activeTab === "option-3" && <PlannenTab animationData={plannenAnimation} />}
-          {activeTab === "option-4" && <ITTab animationData={itAnimation} />}
+          {tabs.map((tab) => (activeTab === tab.id ? <TabContent key={tab.id} title={tab.title} description={tab.description} animationData={tab.animation} link={tab.link} /> : null))}
         </main>
       </div>
     </>
@@ -56,8 +89,9 @@ const Tab: React.FC<TabProps> = ({ tabId, activeTab, onClick, children }) => {
   );
 };
 
-const DigitaliseringTab: React.FC<{ animationData: any }> = ({ animationData }) => {
-  const containerId = "digitaliseren-animation";
+const TabContent: React.FC<TabContentProps> = ({ title, description, animationData, link }) => {
+  const containerId = `${title}-animation`;
+
   useEffect(() => {
     const container = document.getElementById(containerId);
     if (container) {
@@ -72,98 +106,11 @@ const DigitaliseringTab: React.FC<{ animationData: any }> = ({ animationData }) 
   }, [animationData, containerId]);
 
   return (
-    <section id="option-1-panel" className="grid md:grid-cols-2 items-center">
+    <section className="grid md:grid-cols-2 items-center">
       <div>
-        <h2 className="font-semibold text-2xl mb-5">Digitalisering</h2>
-        <p className="text-base mb-5">Archiveren, document management, digitaal ondertekenen, documentherkenning, structuur, workflow management, … Kies voor een papierloze organisatie!</p>
-        <a href="/Digitaliseren" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
-          Meer informatie
-        </a>
-      </div>
-      <div className="h-96" id={containerId}></div>
-    </section>
-  );
-};
-
-const AutomatiseringTab: React.FC<{ animationData: any }> = ({ animationData }) => {
-  const containerId = "automatisering-animation";
-  useEffect(() => {
-    const container = document.getElementById(containerId);
-    if (container) {
-      lottie.loadAnimation({
-        container: container,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-      });
-    }
-  }, [animationData, containerId]);
-
-  return (
-    <section id="option-2-panel" className="grid md:grid-cols-2 items-center">
-      <div>
-        <h2 className="font-semibold text-2xl mb-5">Automatisering</h2>
-        <p className="text-base mb-5">100% focus op het maximaliseren van efficiëntie en productiviteit via integraties, koppelingen tussen systemen of een maatwerktoepassing om jouw organisatie aan te sturen.</p>
-        <a href="/Automatiseren" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
-          Meer informatie
-        </a>
-      </div>
-      <div className="h-96" id={containerId}></div>
-    </section>
-  );
-};
-
-const PlannenTab: React.FC<{ animationData: any }> = ({ animationData }) => {
-  const containerId = "plannen-animation";
-  useEffect(() => {
-    const container = document.getElementById(containerId);
-    if (container) {
-      lottie.loadAnimation({
-        container: container,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-      });
-    }
-  }, [animationData, containerId]);
-
-  return (
-    <section id="option-3-panel" className="grid md:grid-cols-2 items-center">
-      <div>
-        <h2 className="font-semibold text-2xl mb-5">Plannen</h2>
-        <p className="text-base mb-5">Reduceer tijdverlies en optimaliseer productiviteit van werknemers, taken of machines. Optimaal aansturen van werknemers op basis van competenties, skills en taken.</p>
-        <a href="/Plannen" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
-          Meer informatie
-        </a>
-      </div>
-      <div className="h-96" id={containerId}></div>
-    </section>
-  );
-};
-
-const ITTab: React.FC<{ animationData: any }> = ({ animationData }) => {
-  const containerId = "it-animation";
-  useEffect(() => {
-    const container = document.getElementById(containerId);
-    if (container) {
-      lottie.loadAnimation({
-        container: container,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-      });
-    }
-  }, [animationData, containerId]);
-
-  return (
-    <section id="option-4-panel" className="grid md:grid-cols-2 items-center">
-      <div>
-        <h2 className="font-semibold text-2xl mb-5">IT-beheer</h2>
-        <p className="text-base mb-5">Één aanspreekpunt voor alle IT-uitdagingen in jouw organisatie. Heldere communicatie, sterke expertise en duidelijk visie. Wij zijn de IT-partner die je nodig hebt!</p>
-        <a href="/IT" className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
+        <h2 className="font-semibold text-2xl mb-5">{title}</h2>
+        <p className="text-base mb-5">{description}</p>
+        <a href={link} className="py-2 px-4 bg-darkblue transition duration-300 rounded-full text-white text-base hover:bg-lightblue font-medium">
           Meer informatie
         </a>
       </div>

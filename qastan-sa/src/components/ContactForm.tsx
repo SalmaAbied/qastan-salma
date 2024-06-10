@@ -1,6 +1,5 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import React from "react";
-import Background from "./Background";
 
 const ContactSection = () => {
   return (
