@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const cardData: CardProps[] = [
   {
@@ -32,43 +33,49 @@ const CardWImage: React.FC = () => {
 
   return (
     <>
-      <div className="pb-20">
-        <div className="container mx-auto pt-56 md:pt-5 pb-10 flex justify-between">
-          <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Ontdek onze toepassingen</h2>
-          <span onClick={handleClick}>
-            <Link to="/Toepassingen" className="text-darkblue hover:text-lightblue transition duration-300 font-medium group">
-              Ontdek al onze toepassingen <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">&#8594;</span>
-            </Link>
-          </span>
-        </div>
-        <div className="flex flex-wrap container mx-auto justify-around xxl:w-3/4">
-          {cardData.map((card, index) => (
-            <div key={index} className="bg-darkblue shadow-lg shadow-darkblue/50 rounded-xl shadow-lg md:ml-5 lg:ml-0 w-3/4 sm:w-min mb-8 flex flex-col">
-              <div className="sm:w-96 sm:h-96 overflow-hidden flex items-center rounded-t-xl">
-                <img src={card.imageUrl} alt={card.title} />
-              </div>
-              <div className="overflow-hidden relative flex-grow p-4">
-                <ul className="list-none my-5 flex">
-                  {card.tags.map((tag, index) => (
-                    <li key={index} className="rounded-full bg-lightblue text-darkblue px-4 py-2 font-semibold text-xs mr-2">
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex flex-col">
-                  <h1 className="text-xl font-bold text-white mb-2">{card.title}</h1>
-                  <p className="text-base font-light text-white mb-4">{card.description}</p>
+      <HelmetProvider>
+        <Helmet>
+          <title>Onze Toepassingen - Qastan</title>
+          <meta name="description" content="Ontdek onze verschillende toepassingen voor bedrijven, waaronder bestanden centraliseren, cyberveiligheidstraining en meer. Krijg meer informatie over elke toepassing en hoe deze uw bedrijf ten goede kan komen." />
+        </Helmet>
+        <div className="pb-20">
+          <div className="container mx-auto pt-56 md:pt-5 pb-10 flex justify-between">
+            <h2 className="mb-1 text-4xl font-bold leading-tight text-gray-900">Ontdek onze toepassingen</h2>
+            <span onClick={handleClick}>
+              <Link to="/Toepassingen" className="text-darkblue hover:text-lightblue transition duration-300 font-medium group">
+                Ontdek al onze toepassingen <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">&#8594;</span>
+              </Link>
+            </span>
+          </div>
+          <div className="flex flex-wrap container mx-auto justify-around xxl:w-3/4">
+            {cardData.map((card, index) => (
+              <div key={index} className="bg-darkblue shadow-lg shadow-darkblue/50 rounded-xl shadow-lg md:ml-5 lg:ml-0 w-3/4 sm:w-min mb-8 flex flex-col">
+                <div className="sm:w-96 sm:h-96 overflow-hidden flex items-center rounded-t-xl">
+                  <img src={card.imageUrl} alt={card.title} />
+                </div>
+                <div className="overflow-hidden relative flex-grow p-4">
+                  <ul className="list-none my-5 flex">
+                    {card.tags.map((tag, index) => (
+                      <li key={index} className="rounded-full bg-lightblue text-darkblue px-4 py-2 font-semibold text-xs mr-2">
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-col">
+                    <h1 className="text-xl font-bold text-white mb-2">{card.title}</h1>
+                    <p className="text-base font-light text-white mb-4">{card.description}</p>
+                  </div>
+                </div>
+                <div className="mt-auto justify-end p-4">
+                  <Link onClick={handleClick} to={`Toepassingen/${card.id}`} className="rounded-full block h-10 flex items-center w-fit md:mt-0 mt-2 font-medium text-white bg-darkorange px-5 py-2 hover:bg-lightblue hover:text-white transition duration-300">
+                    Meer informatie
+                  </Link>
                 </div>
               </div>
-              <div className="mt-auto justify-end p-4">
-                <Link onClick={handleClick} to={`Toepassingen/${card.id}`} className="rounded-full block h-10 flex items-center w-fit md:mt-0 mt-2 font-medium text-white bg-darkorange px-5 py-2 hover:bg-lightblue hover:text-white transition duration-300">
-                  Meer informatie
-                </Link>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </HelmetProvider>
     </>
   );
 };

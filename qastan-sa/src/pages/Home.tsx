@@ -10,13 +10,13 @@ import CardWImage from "../components/CardWImage";
 const Home: React.FC = () => {
   return (
     <>
-      <Hero />
-      <LogoSlider />
-      <CardFullW />
+      <Hero /> {/* SEO */}
+      <LogoSlider /> {/* SEO */}
+      <CardFullW /> {/* SEO */}
       <Tabs />
-      <Banner />
-      <CardFullWTwo />
-      <CardWImage />
+      <Banner /> {/* SEO */}
+      <CardFullWTwo /> {/* SEO */}
+      <CardWImage /> {/* SEO */}
     </>
   );
 };
