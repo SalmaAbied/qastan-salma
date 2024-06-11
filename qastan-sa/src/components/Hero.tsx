@@ -43,7 +43,8 @@ const Hero: React.FC = () => {
           >
             <div className="text-center">
               <h1 className="h-40 md:text-8xl font-bold text-6xl pb-5 h-30">
-                <span className="mx-auto">Helemaal</span> <span className="p2 text-darkorange">digitaal</span>
+                <span className="mx-auto">Helemaal</span> 
+                <span className="p2 text-darkorange">digitaal</span>
               </h1>
               <p className="text-base px-5 md:text-xl mx-auto md:w-1/2 pb-5 md:mt-10 lg:mt-2">
                 Op zoek naar een <span className="font-bold">IT-partner</span> om de <span className="font-bold">digitalisering</span> van je <span className="font-bold">organisatie</span> in goede banen te leiden? Ontdek onze oplossingen
