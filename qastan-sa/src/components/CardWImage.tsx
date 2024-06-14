@@ -32,6 +32,7 @@ const CardWImage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  
   return (
     <>
       <HelmetProvider>
